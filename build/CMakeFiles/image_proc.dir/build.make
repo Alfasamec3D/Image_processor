@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/image_processor
+CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/Image_processor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/image_processor/build
+CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/image_proc.dir/depend.make
@@ -69,27 +69,49 @@ include CMakeFiles/image_proc.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/image_proc.dir/flags.make
 
+image_proc_autogen/timestamp: /usr/lib/qt5/bin/moc
+image_proc_autogen/timestamp: CMakeFiles/image_proc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target image_proc"
+	/usr/bin/cmake -E cmake_autogen /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/image_proc_autogen.dir/AutogenInfo.json Release
+	/usr/bin/cmake -E touch /mnt/9C468886468862BE/media/programs/Image_processor/build/image_proc_autogen/timestamp
+
+CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.o: CMakeFiles/image_proc.dir/flags.make
+CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.o: image_proc_autogen/mocs_compilation.cpp
+CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.o: CMakeFiles/image_proc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.o -MF CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.o -c /mnt/9C468886468862BE/media/programs/Image_processor/build/image_proc_autogen/mocs_compilation.cpp
+
+CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/9C468886468862BE/media/programs/Image_processor/build/image_proc_autogen/mocs_compilation.cpp > CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.i
+
+CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/9C468886468862BE/media/programs/Image_processor/build/image_proc_autogen/mocs_compilation.cpp -o CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.s
+
 CMakeFiles/image_proc.dir/image_proc.cpp.o: CMakeFiles/image_proc.dir/flags.make
-CMakeFiles/image_proc.dir/image_proc.cpp.o: /mnt/9C468886468862BE/media/programs/image_processor/image_proc.cpp
+CMakeFiles/image_proc.dir/image_proc.cpp.o: /mnt/9C468886468862BE/media/programs/Image_processor/image_proc.cpp
 CMakeFiles/image_proc.dir/image_proc.cpp.o: CMakeFiles/image_proc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/9C468886468862BE/media/programs/image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/image_proc.dir/image_proc.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image_proc.dir/image_proc.cpp.o -MF CMakeFiles/image_proc.dir/image_proc.cpp.o.d -o CMakeFiles/image_proc.dir/image_proc.cpp.o -c /mnt/9C468886468862BE/media/programs/image_processor/image_proc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/image_proc.dir/image_proc.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image_proc.dir/image_proc.cpp.o -MF CMakeFiles/image_proc.dir/image_proc.cpp.o.d -o CMakeFiles/image_proc.dir/image_proc.cpp.o -c /mnt/9C468886468862BE/media/programs/Image_processor/image_proc.cpp
 
 CMakeFiles/image_proc.dir/image_proc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/image_proc.dir/image_proc.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/9C468886468862BE/media/programs/image_processor/image_proc.cpp > CMakeFiles/image_proc.dir/image_proc.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/9C468886468862BE/media/programs/Image_processor/image_proc.cpp > CMakeFiles/image_proc.dir/image_proc.cpp.i
 
 CMakeFiles/image_proc.dir/image_proc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/image_proc.dir/image_proc.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/9C468886468862BE/media/programs/image_processor/image_proc.cpp -o CMakeFiles/image_proc.dir/image_proc.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/9C468886468862BE/media/programs/Image_processor/image_proc.cpp -o CMakeFiles/image_proc.dir/image_proc.cpp.s
 
 # Object files for target image_proc
 image_proc_OBJECTS = \
+"CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/image_proc.dir/image_proc.cpp.o"
 
 # External object files for target image_proc
 image_proc_EXTERNAL_OBJECTS =
 
+image_proc: CMakeFiles/image_proc.dir/image_proc_autogen/mocs_compilation.cpp.o
 image_proc: CMakeFiles/image_proc.dir/image_proc.cpp.o
 image_proc: CMakeFiles/image_proc.dir/build.make
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.6.0
@@ -130,7 +152,6 @@ image_proc: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.6.0
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.6.0
 image_proc: libproc.a
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.6.0
-image_proc: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.6.0
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.6.0
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.6.0
@@ -149,10 +170,11 @@ image_proc: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.6.0
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.6.0
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.6.0
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0
+image_proc: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
 image_proc: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
 image_proc: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
 image_proc: CMakeFiles/image_proc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/9C468886468862BE/media/programs/image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable image_proc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable image_proc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/image_proc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -163,7 +185,7 @@ CMakeFiles/image_proc.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/image_proc.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/image_proc.dir/clean
 
-CMakeFiles/image_proc.dir/depend:
-	cd /mnt/9C468886468862BE/media/programs/image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/9C468886468862BE/media/programs/image_processor /mnt/9C468886468862BE/media/programs/image_processor /mnt/9C468886468862BE/media/programs/image_processor/build /mnt/9C468886468862BE/media/programs/image_processor/build /mnt/9C468886468862BE/media/programs/image_processor/build/CMakeFiles/image_proc.dir/DependInfo.cmake "--color=$(COLOR)"
+CMakeFiles/image_proc.dir/depend: image_proc_autogen/timestamp
+	cd /mnt/9C468886468862BE/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/image_proc.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/image_proc.dir/depend
 

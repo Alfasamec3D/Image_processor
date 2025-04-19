@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/9C468886468862BE/media/programs/image_processor
+# Install script for directory: /mnt/9C468886468862BE/media/programs/Image_processor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/9C468886468862BE/media/programs/image_processor/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/9C468886468862BE/media/programs/Image_processor/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

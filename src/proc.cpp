@@ -35,27 +35,3 @@ void grayscale(cv::Mat& image, int numthreads) {
   }
   for (auto& th: threads) th.join();
 }
-
-MainAppWindow::MainAppWindow() { 
-  imageLable->setAlignment(Qt::AlignCenter);
-  setCentralWidget(imageLabel);
-  QToolBar* toolbar = addToolBar("Toolbar");
-  QAction* loadAction = new QAction("Load File", this);
-
-  toolbar->addAction(loadAction);
-  connect(loadAction, &QAction::triggered, this, &ImageWindow::loadImage);
-}
-MainAppWindow::loadImage()
-{
-  QString fileName = QFileDialog::getOpenFileName(
-      this, "Open Image", "", "Image (*.png *.jpg *.jpeg *.bmp)");
-      if (!fileName.isEmpty())
-      {
-        QPixmap pix(fileName);
-        imageLabel->setPixmap(pix.scaled(
-            imageLabel->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
-      }
-}
-MainAppWindow::resizeEvent(QResizeEvent *) override{
-  if (!imageLabel->)
-}

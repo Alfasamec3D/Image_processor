@@ -1,12 +1,10 @@
 #include"proc.hpp"
 #include <QApplication>
 #include <QFileDialog>
-#include <QLabel>
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <opencv2/core/types.hpp>
 #include <opencv2/imgproc.hpp>
-
 
 int main(int argc, char *argv[]) {
   QApplication app(argc, argv);

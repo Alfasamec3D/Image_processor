@@ -69,8 +69,9 @@ include CMakeFiles/image_proc_autogen.dir/progress.make
 CMakeFiles/image_proc_autogen: image_proc_autogen/timestamp
 
 image_proc_autogen/timestamp: /usr/lib/qt5/bin/moc
+image_proc_autogen/timestamp: /usr/lib/qt5/bin/uic
 image_proc_autogen/timestamp: CMakeFiles/image_proc_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target image_proc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target image_proc"
 	/usr/bin/cmake -E cmake_autogen /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/image_proc_autogen.dir/AutogenInfo.json Release
 	/usr/bin/cmake -E touch /mnt/9C468886468862BE/media/programs/Image_processor/build/image_proc_autogen/timestamp
 

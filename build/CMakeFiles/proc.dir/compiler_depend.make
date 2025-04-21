@@ -1599,6 +1599,8 @@ CMakeFiles/proc.dir/src/proc.cpp.o: /mnt/9C468886468862BE/media/programs/Image_p
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFileDialog \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMessageBox \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QToolBar \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h \
@@ -1607,6 +1609,8 @@ CMakeFiles/proc.dir/src/proc.cpp.o: /mnt/9C468886468862BE/media/programs/Image_p
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenu.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmessagebox.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtoolbar.h \
@@ -1629,9 +1633,13 @@ CMakeFiles/proc.dir/src/proc.cpp.o: /mnt/9C468886468862BE/media/programs/Image_p
   /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h
 
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenu.h:
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction:
 
@@ -1868,6 +1876,8 @@ proc_autogen/mocs_compilation.cpp:
 /usr/include/c++/13/bits/nested_exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMessageBox:
 
 /usr/include/c++/13/set:
 
@@ -2230,6 +2240,8 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/13/bits/ranges_algo.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmessagebox.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 

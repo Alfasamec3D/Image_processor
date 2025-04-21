@@ -127,6 +127,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named gui
+
+# Build rule for target.
+gui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui
+.PHONY : gui
+
+# fast build rule for target.
+gui/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/build
+.PHONY : gui/fast
+
+#=============================================================================
 # Target rules for targets named proc
 
 # Build rule for target.
@@ -151,6 +164,32 @@ image_proc: cmake_check_build_system
 image_proc/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_proc.dir/build.make CMakeFiles/image_proc.dir/build
 .PHONY : image_proc/fast
+
+#=============================================================================
+# Target rules for targets named gui_autogen_timestamp_deps
+
+# Build rule for target.
+gui_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui_autogen_timestamp_deps
+.PHONY : gui_autogen_timestamp_deps
+
+# fast build rule for target.
+gui_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_autogen_timestamp_deps.dir/build.make CMakeFiles/gui_autogen_timestamp_deps.dir/build
+.PHONY : gui_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named gui_autogen
+
+# Build rule for target.
+gui_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui_autogen
+.PHONY : gui_autogen
+
+# fast build rule for target.
+gui_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_autogen.dir/build.make CMakeFiles/gui_autogen.dir/build
+.PHONY : gui_autogen/fast
 
 #=============================================================================
 # Target rules for targets named proc_autogen_timestamp_deps
@@ -203,6 +242,30 @@ image_proc_autogen: cmake_check_build_system
 image_proc_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_proc_autogen.dir/build.make CMakeFiles/image_proc_autogen.dir/build
 .PHONY : image_proc_autogen/fast
+
+gui_autogen/mocs_compilation.o: gui_autogen/mocs_compilation.cpp.o
+.PHONY : gui_autogen/mocs_compilation.o
+
+# target to build an object file
+gui_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o
+.PHONY : gui_autogen/mocs_compilation.cpp.o
+
+gui_autogen/mocs_compilation.i: gui_autogen/mocs_compilation.cpp.i
+.PHONY : gui_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+gui_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.i
+.PHONY : gui_autogen/mocs_compilation.cpp.i
+
+gui_autogen/mocs_compilation.s: gui_autogen/mocs_compilation.cpp.s
+.PHONY : gui_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+gui_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.s
+.PHONY : gui_autogen/mocs_compilation.cpp.s
 
 image_proc.o: image_proc.cpp.o
 .PHONY : image_proc.o
@@ -276,6 +339,30 @@ proc_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/proc.dir/build.make CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.s
 .PHONY : proc_autogen/mocs_compilation.cpp.s
 
+src/gui.o: src/gui.cpp.o
+.PHONY : src/gui.o
+
+# target to build an object file
+src/gui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/src/gui.cpp.o
+.PHONY : src/gui.cpp.o
+
+src/gui.i: src/gui.cpp.i
+.PHONY : src/gui.i
+
+# target to preprocess a source file
+src/gui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/src/gui.cpp.i
+.PHONY : src/gui.cpp.i
+
+src/gui.s: src/gui.cpp.s
+.PHONY : src/gui.s
+
+# target to generate assembly for a file
+src/gui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/src/gui.cpp.s
+.PHONY : src/gui.cpp.s
+
 src/proc.o: src/proc.cpp.o
 .PHONY : src/proc.o
 
@@ -309,12 +396,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... gui_autogen"
+	@echo "... gui_autogen_timestamp_deps"
 	@echo "... image_proc_autogen"
 	@echo "... image_proc_autogen_timestamp_deps"
 	@echo "... proc_autogen"
 	@echo "... proc_autogen_timestamp_deps"
+	@echo "... gui"
 	@echo "... image_proc"
 	@echo "... proc"
+	@echo "... gui_autogen/mocs_compilation.o"
+	@echo "... gui_autogen/mocs_compilation.i"
+	@echo "... gui_autogen/mocs_compilation.s"
 	@echo "... image_proc.o"
 	@echo "... image_proc.i"
 	@echo "... image_proc.s"
@@ -324,6 +417,9 @@ help:
 	@echo "... proc_autogen/mocs_compilation.o"
 	@echo "... proc_autogen/mocs_compilation.i"
 	@echo "... proc_autogen/mocs_compilation.s"
+	@echo "... src/gui.o"
+	@echo "... src/gui.i"
+	@echo "... src/gui.s"
 	@echo "... src/proc.o"
 	@echo "... src/proc.i"
 	@echo "... src/proc.s"

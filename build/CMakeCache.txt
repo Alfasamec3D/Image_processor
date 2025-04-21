@@ -230,6 +230,9 @@ Qt5Widgets_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets
 //The directory containing a CMake configuration file for Qt5.
 Qt5_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5
 
+//Dependencies for the target
+gui_LIB_DEPENDS:STATIC=general;Qt5::Gui;general;Qt5::Widgets;general;proc;
+
 //Value Computed by CMake
 image_proc_BINARY_DIR:STATIC=/mnt/9C468886468862BE/media/programs/Image_processor/build
 
@@ -238,9 +241,6 @@ image_proc_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 image_proc_SOURCE_DIR:STATIC=/mnt/9C468886468862BE/media/programs/Image_processor
-
-//Dependencies for the target
-proc_LIB_DEPENDS:STATIC=general;Qt5::Gui;general;Qt5::Widgets;
 
 
 ########################

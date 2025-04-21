@@ -152,6 +152,7 @@ image_proc: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.6.0
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.6.0
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.6.0
 image_proc: libproc.a
+image_proc: libgui.a
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.6.0
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.6.0
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.6.0
@@ -171,6 +172,7 @@ image_proc: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.6.0
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.6.0
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.6.0
 image_proc: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0
+image_proc: libproc.a
 image_proc: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
 image_proc: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
 image_proc: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13

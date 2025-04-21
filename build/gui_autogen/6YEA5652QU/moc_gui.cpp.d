@@ -1,5 +1,6 @@
-/mnt/9C468886468862BE/media/programs/Image_processor/build/proc_autogen/6YEA5652QU/moc_proc.cpp: /mnt/9C468886468862BE/media/programs/Image_processor/include/proc.hpp \
-  /mnt/9C468886468862BE/media/programs/Image_processor/build/proc_autogen/moc_predefs.h \
+/mnt/9C468886468862BE/media/programs/Image_processor/build/gui_autogen/6YEA5652QU/moc_gui.cpp: /mnt/9C468886468862BE/media/programs/Image_processor/include/gui.hpp \
+  /mnt/9C468886468862BE/media/programs/Image_processor/build/gui_autogen/moc_predefs.h \
+  /mnt/9C468886468862BE/media/programs/Image_processor/include/proc.hpp \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \

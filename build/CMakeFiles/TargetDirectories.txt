@@ -1,8 +1,11 @@
+/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/gui.dir
 /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/proc.dir
 /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/image_proc.dir
 /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/test.dir
 /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/edit_cache.dir
 /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/rebuild_cache.dir
+/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/gui_autogen_timestamp_deps.dir
+/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/gui_autogen.dir
 /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/proc_autogen_timestamp_deps.dir
 /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/proc_autogen.dir
 /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/image_proc_autogen_timestamp_deps.dir

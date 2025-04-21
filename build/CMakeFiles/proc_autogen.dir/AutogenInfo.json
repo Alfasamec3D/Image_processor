@@ -85,19 +85,11 @@
 	"CMAKE_SOURCE_DIR" : "/mnt/9C468886468862BE/media/programs/Image_processor",
 	"DEP_FILE" : "/mnt/9C468886468862BE/media/programs/Image_processor/build/proc_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "proc_autogen/timestamp",
-	"HEADERS" : 
-	[
-		[
-			"/mnt/9C468886468862BE/media/programs/Image_processor/include/proc.hpp",
-			"MU",
-			"6YEA5652QU/moc_proc.cpp",
-			null
-		]
-	],
+	"HEADERS" : [],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/mnt/9C468886468862BE/media/programs/Image_processor/build/proc_autogen/include",
 	"MOC_COMPILATION_FILE" : "/mnt/9C468886468862BE/media/programs/Image_processor/build/proc_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : [],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -109,11 +101,6 @@
 	[
 		"/usr/include/opencv4",
 		"/mnt/9C468886468862BE/media/programs/Image_processor/include",
-		"/usr/include/x86_64-linux-gnu/qt5",
-		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
-		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
-		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
-		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
 		"/usr/include/c++/13",
 		"/usr/include/x86_64-linux-gnu/c++/13",
 		"/usr/include/c++/13/backward",

@@ -75,6 +75,7 @@
 
 CMakeFiles/image_proc.dir/image_proc.cpp.o
  /mnt/9C468886468862BE/media/programs/Image_processor/image_proc.cpp
+ /mnt/9C468886468862BE/media/programs/Image_processor/include/gui.hpp
  /mnt/9C468886468862BE/media/programs/Image_processor/include/proc.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h

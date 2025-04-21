@@ -67,8 +67,6 @@ include CMakeFiles/proc_autogen_timestamp_deps.dir/compiler_depend.make
 include CMakeFiles/proc_autogen_timestamp_deps.dir/progress.make
 
 CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
-CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
-CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
 CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
 
 proc_autogen_timestamp_deps: CMakeFiles/proc_autogen_timestamp_deps

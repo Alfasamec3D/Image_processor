@@ -1,19 +1,6 @@
 #include "proc.hpp"
 
-#include <QAction>
-#include <QFileDialog>
-#include <QMenu>
-#include <QMessageBox>
-#include <QToolBar>
 #include <thread>
-
-QPixmap cvMatToQPixmap(const cv::Mat& mat) {
-  cv::Mat rgb;
-  cv::cvtColor(mat, rgb, cv::COLOR_BGR2RGB);
-  return QPixmap::fromImage(QImage(rgb.data, rgb.cols, rgb.rows, rgb.step,
-                                   QImage::Format_RGB888))
-      .copy();
-}
 
 void grayscale_section(cv::Mat& image, const int& start, const int& end) {
   for (int i = start; i < end; ++i) {
@@ -59,98 +46,4 @@ void imageblur(cv::Mat& input, cv::Mat& output, int depth, int numthreads) {
                          start, end, depth);
   }
   for (auto& th : threads) th.join();
-}
-
-MainAppWindow::MainAppWindow() {
-  imageLabel = new QLabel(this);
-  imageLabel->setAlignment(Qt::AlignCenter);
-  setCentralWidget(imageLabel);
-  QToolBar* toolbar = addToolBar("Toolbar");
-
-  // Creating actions
-  QAction* loadAction = new QAction("Load File", this);
-  QAction* grayscaleAction = new QAction("Grayscale", this);
-  QAction* saveAction = new QAction("Save File", this);
-  QAction* blurAction = new QAction("Gaussian Blur", this);
-  QAction* fileAction = new QAction("File", this);
-
-  QMenu* fileMenu = new QMenu(this);
-  fileMenu->addAction(loadAction);
-  fileMenu->addAction(saveAction);
-
-  // Connect menu to main button
-  fileAction->setMenu(fileMenu);
-
-  // Adding action buttons to the toolbar
-  toolbar->addAction(fileAction);
-  toolbar->addAction(grayscaleAction);
-  toolbar->addAction(blurAction);
-
-  // Connecting buttons and actions
-  connect(loadAction, &QAction::triggered, this, &MainAppWindow::loadImage);
-  connect(grayscaleAction, &QAction::triggered, this,
-          &MainAppWindow::applyGrayscale);
-  connect(saveAction, &QAction::triggered, this, &MainAppWindow::saveImage);
-  connect(blurAction, &QAction::triggered, this, &MainAppWindow::applyBlur);
-}
-
-void MainAppWindow::loadImage() {
-  QString fileName = QFileDialog::getOpenFileName(
-      this, "Open Image", "", "Image (*.png *.jpg *.jpeg *.bmp)");
-
-  if (!fileName.isEmpty()) {
-    currentProcessedImage = cv::imread(fileName.toStdString());
-    imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
-                              .scaled(imageLabel->size(), Qt::KeepAspectRatio,
-                                      Qt::SmoothTransformation));
-  }
-}
-
-void MainAppWindow::saveImage() {
-  if (currentProcessedImage.empty()) {
-    QMessageBox::warning(this, "Error", "No processed image to save!");
-    return;
-  }
-  QString fileName = QFileDialog::getSaveFileName(
-      this, "Save Image", "", "Images (*.pn *.jpg *.jpeg *.bmp)");
-  if (!fileName.isEmpty()) {
-    cv::imwrite(fileName.toStdString(), currentProcessedImage);
-  }
-}
-
-void MainAppWindow::applyGrayscale() {
-  QPixmap currentPixmap = imageLabel->pixmap(Qt::ReturnByValue);
-  if (currentPixmap.isNull()) return;
-
-  // Apply grayscale
-
-  grayscale(currentProcessedImage, 4);
-
-  // Ensure deep copy
-  imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
-                            .scaled(imageLabel->size(), Qt::KeepAspectRatio,
-                                    Qt::SmoothTransformation));
-}
-
-void MainAppWindow::resizeEvent(QResizeEvent*) {
-  QPixmap pix = imageLabel->pixmap(Qt::ReturnByValue);
-  if (pix.isNull()) return;
-  imageLabel->setPixmap(pix.scaled(imageLabel->size(), Qt::KeepAspectRatio,
-                                   Qt::SmoothTransformation));
-}
-
-void MainAppWindow::applyBlur() {
-  QPixmap currentPixmap = imageLabel->pixmap(Qt::ReturnByValue);
-  if (currentPixmap.isNull()) return;
-
-  // Apply grayscale
-  int depth = 5;
-  cv::Mat input = currentProcessedImage.clone();
-
-  imageblur(input, currentProcessedImage, depth, 6);
-
-  // Ensure deep copy
-  imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
-                            .scaled(imageLabel->size(), Qt::KeepAspectRatio,
-                                    Qt::SmoothTransformation));
 }

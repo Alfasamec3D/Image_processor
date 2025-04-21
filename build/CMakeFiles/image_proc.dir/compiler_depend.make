@@ -73,6 +73,7 @@ image_proc_autogen/timestamp: /mnt/9C468886468862BE/media/programs/Image_process
   /usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake
 
 CMakeFiles/image_proc.dir/image_proc.cpp.o: /mnt/9C468886468862BE/media/programs/Image_processor/image_proc.cpp \
+  /mnt/9C468886468862BE/media/programs/Image_processor/include/gui.hpp \
   /mnt/9C468886468862BE/media/programs/Image_processor/include/proc.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -678,10 +679,6 @@ image_proc_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h:
-
 /usr/include/opencv4/opencv2/flann/allocator.h:
 
 /usr/include/c++/13/tr1/modified_bessel_func.tcc:
@@ -911,6 +908,10 @@ image_proc_autogen/mocs_compilation.cpp:
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h:
+
+/usr/include/c++/13/bits/stl_bvector.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h:
 
@@ -1148,6 +1149,10 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h:
 
+/mnt/9C468886468862BE/media/programs/Image_processor/include/gui.hpp:
+
+/usr/include/c++/13/bits/functexcept.h:
+
 /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake:
 
 /usr/include/c++/13/bits/align.h:
@@ -1211,10 +1216,6 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/13/algorithm:
 
 /usr/include/c++/13/atomic:
-
-/usr/include/c++/13/tr1/special_function_util.h:
-
-/usr/include/c++/13/tr1/poly_laguerre.tcc:
 
 /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake:
 
@@ -1318,8 +1319,6 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/opencv4/opencv2/flann/general.h:
 
-/usr/include/c++/13/bits/functexcept.h:
-
 /usr/include/c++/13/stdexcept:
 
 /usr/include/c++/13/clocale:
@@ -1331,6 +1330,14 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h:
 
 /usr/include/c++/13/bits/move.h:
+
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h:
 
 /usr/include/c++/13/typeinfo:
 
@@ -1767,10 +1774,6 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /usr/include/opencv4/opencv2/flann/all_indices.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h:
-
-/usr/include/c++/13/bits/stl_bvector.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qhash.h:
 

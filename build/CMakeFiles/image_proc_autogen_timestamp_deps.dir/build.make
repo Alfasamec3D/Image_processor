@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/Image_processor
+CMAKE_SOURCE_DIR = /home/alfasamec3d/media/programs/Image_processor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
+CMAKE_BINARY_DIR = /home/alfasamec3d/media/programs/Image_processor/build
 
 # Utility rule file for image_proc_autogen_timestamp_deps.
 
@@ -68,65 +68,8 @@ include CMakeFiles/image_proc_autogen_timestamp_deps.dir/progress.make
 
 CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 CMakeFiles/image_proc_autogen_timestamp_deps: libgui.a
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: libproc.a
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_cvv.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.6.0
-CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
 CMakeFiles/image_proc_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
+CMakeFiles/image_proc_autogen_timestamp_deps: libproc.a
 
 image_proc_autogen_timestamp_deps: CMakeFiles/image_proc_autogen_timestamp_deps
 image_proc_autogen_timestamp_deps: CMakeFiles/image_proc_autogen_timestamp_deps.dir/build.make
@@ -141,6 +84,6 @@ CMakeFiles/image_proc_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/image_proc_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/image_proc_autogen_timestamp_deps.dir/depend:
-	cd /mnt/9C468886468862BE/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/image_proc_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/alfasamec3d/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/image_proc_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/image_proc_autogen_timestamp_deps.dir/depend
 

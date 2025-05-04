@@ -1,0 +1,5 @@
+if(EXISTS "/home/alfasamec3d/media/programs/Image_processor/build/testblursection[1]_tests.cmake")
+  include("/home/alfasamec3d/media/programs/Image_processor/build/testblursection[1]_tests.cmake")
+else()
+  add_test(testblursection_NOT_BUILT testblursection_NOT_BUILT)
+endif()

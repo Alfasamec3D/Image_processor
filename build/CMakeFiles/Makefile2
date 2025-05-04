@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/Image_processor
+CMAKE_SOURCE_DIR = /home/alfasamec3d/media/programs/Image_processor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
+CMAKE_BINARY_DIR = /home/alfasamec3d/media/programs/Image_processor/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -66,23 +66,100 @@ CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
 all: CMakeFiles/gui.dir/all
 all: CMakeFiles/proc.dir/all
 all: CMakeFiles/image_proc.dir/all
+all: CMakeFiles/testgrayscale.dir/all
+all: CMakeFiles/testgrayscalesection.dir/all
+all: CMakeFiles/testblur.dir/all
+all: CMakeFiles/testblursection.dir/all
+all: _deps/googletest-build/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: _deps/googletest-build/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/gui.dir/clean
 clean: CMakeFiles/proc.dir/clean
 clean: CMakeFiles/image_proc.dir/clean
+clean: CMakeFiles/testgrayscale.dir/clean
+clean: CMakeFiles/testgrayscalesection.dir/clean
+clean: CMakeFiles/testblur.dir/clean
+clean: CMakeFiles/testblursection.dir/clean
 clean: CMakeFiles/gui_autogen_timestamp_deps.dir/clean
 clean: CMakeFiles/gui_autogen.dir/clean
 clean: CMakeFiles/proc_autogen_timestamp_deps.dir/clean
 clean: CMakeFiles/proc_autogen.dir/clean
 clean: CMakeFiles/image_proc_autogen_timestamp_deps.dir/clean
 clean: CMakeFiles/image_proc_autogen.dir/clean
+clean: CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/testgrayscale_autogen.dir/clean
+clean: CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/testgrayscalesection_autogen.dir/clean
+clean: CMakeFiles/testblur_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/testblur_autogen.dir/clean
+clean: CMakeFiles/testblursection_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/testblursection_autogen.dir/clean
+clean: _deps/googletest-build/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory _deps/googletest-build
+
+# Recursive "all" directory target.
+_deps/googletest-build/all: _deps/googletest-build/googlemock/all
+.PHONY : _deps/googletest-build/all
+
+# Recursive "preinstall" directory target.
+_deps/googletest-build/preinstall: _deps/googletest-build/googlemock/preinstall
+.PHONY : _deps/googletest-build/preinstall
+
+# Recursive "clean" directory target.
+_deps/googletest-build/clean: _deps/googletest-build/googlemock/clean
+.PHONY : _deps/googletest-build/clean
+
+#=============================================================================
+# Directory level rules for directory _deps/googletest-build/googlemock
+
+# Recursive "all" directory target.
+_deps/googletest-build/googlemock/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
+_deps/googletest-build/googlemock/all: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
+_deps/googletest-build/googlemock/all: _deps/googletest-build/googletest/all
+.PHONY : _deps/googletest-build/googlemock/all
+
+# Recursive "preinstall" directory target.
+_deps/googletest-build/googlemock/preinstall: _deps/googletest-build/googletest/preinstall
+.PHONY : _deps/googletest-build/googlemock/preinstall
+
+# Recursive "clean" directory target.
+_deps/googletest-build/googlemock/clean: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean
+_deps/googletest-build/googlemock/clean: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean
+_deps/googletest-build/googlemock/clean: _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/clean
+_deps/googletest-build/googlemock/clean: _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/clean
+_deps/googletest-build/googlemock/clean: _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/clean
+_deps/googletest-build/googlemock/clean: _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/clean
+_deps/googletest-build/googlemock/clean: _deps/googletest-build/googletest/clean
+.PHONY : _deps/googletest-build/googlemock/clean
+
+#=============================================================================
+# Directory level rules for directory _deps/googletest-build/googletest
+
+# Recursive "all" directory target.
+_deps/googletest-build/googletest/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+_deps/googletest-build/googletest/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+.PHONY : _deps/googletest-build/googletest/all
+
+# Recursive "preinstall" directory target.
+_deps/googletest-build/googletest/preinstall:
+.PHONY : _deps/googletest-build/googletest/preinstall
+
+# Recursive "clean" directory target.
+_deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean
+_deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
+_deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/clean
+_deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/clean
+_deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/clean
+_deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/clean
+.PHONY : _deps/googletest-build/googletest/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/gui.dir
@@ -93,14 +170,14 @@ CMakeFiles/gui.dir/all: CMakeFiles/gui_autogen_timestamp_deps.dir/all
 CMakeFiles/gui.dir/all: CMakeFiles/gui_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=1,2,3,4 "Built target gui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=21,22,23,24 "Built target gui"
 .PHONY : CMakeFiles/gui.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
 .PHONY : CMakeFiles/gui.dir/rule
 
 # Convenience name for target.
@@ -120,14 +197,14 @@ CMakeFiles/proc.dir/all: CMakeFiles/proc_autogen_timestamp_deps.dir/all
 CMakeFiles/proc.dir/all: CMakeFiles/proc_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/proc.dir/build.make CMakeFiles/proc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/proc.dir/build.make CMakeFiles/proc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=11,12,13,14 "Built target proc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=31,32,33,34 "Built target proc"
 .PHONY : CMakeFiles/proc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/proc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/proc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
 .PHONY : CMakeFiles/proc.dir/rule
 
 # Convenience name for target.
@@ -149,14 +226,14 @@ CMakeFiles/image_proc.dir/all: CMakeFiles/image_proc_autogen_timestamp_deps.dir/
 CMakeFiles/image_proc.dir/all: CMakeFiles/image_proc_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_proc.dir/build.make CMakeFiles/image_proc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_proc.dir/build.make CMakeFiles/image_proc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=6,7,8,9 "Built target image_proc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=26,27,28,29 "Built target image_proc"
 .PHONY : CMakeFiles/image_proc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/image_proc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/image_proc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
 .PHONY : CMakeFiles/image_proc.dir/rule
 
 # Convenience name for target.
@@ -169,20 +246,140 @@ CMakeFiles/image_proc.dir/clean:
 .PHONY : CMakeFiles/image_proc.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/testgrayscale.dir
+
+# All Build rule for target.
+CMakeFiles/testgrayscale.dir/all: CMakeFiles/proc.dir/all
+CMakeFiles/testgrayscale.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/testgrayscale.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/testgrayscale.dir/all: CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/all
+CMakeFiles/testgrayscale.dir/all: CMakeFiles/testgrayscale_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale.dir/build.make CMakeFiles/testgrayscale.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale.dir/build.make CMakeFiles/testgrayscale.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=46,47,48,49 "Built target testgrayscale"
+.PHONY : CMakeFiles/testgrayscale.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testgrayscale.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 20
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testgrayscale.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/testgrayscale.dir/rule
+
+# Convenience name for target.
+testgrayscale: CMakeFiles/testgrayscale.dir/rule
+.PHONY : testgrayscale
+
+# clean rule for target.
+CMakeFiles/testgrayscale.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale.dir/build.make CMakeFiles/testgrayscale.dir/clean
+.PHONY : CMakeFiles/testgrayscale.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testgrayscalesection.dir
+
+# All Build rule for target.
+CMakeFiles/testgrayscalesection.dir/all: CMakeFiles/proc.dir/all
+CMakeFiles/testgrayscalesection.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/testgrayscalesection.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/testgrayscalesection.dir/all: CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/all
+CMakeFiles/testgrayscalesection.dir/all: CMakeFiles/testgrayscalesection_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection.dir/build.make CMakeFiles/testgrayscalesection.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection.dir/build.make CMakeFiles/testgrayscalesection.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=51,52,53,54 "Built target testgrayscalesection"
+.PHONY : CMakeFiles/testgrayscalesection.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testgrayscalesection.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 20
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testgrayscalesection.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/testgrayscalesection.dir/rule
+
+# Convenience name for target.
+testgrayscalesection: CMakeFiles/testgrayscalesection.dir/rule
+.PHONY : testgrayscalesection
+
+# clean rule for target.
+CMakeFiles/testgrayscalesection.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection.dir/build.make CMakeFiles/testgrayscalesection.dir/clean
+.PHONY : CMakeFiles/testgrayscalesection.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testblur.dir
+
+# All Build rule for target.
+CMakeFiles/testblur.dir/all: CMakeFiles/proc.dir/all
+CMakeFiles/testblur.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/testblur.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/testblur.dir/all: CMakeFiles/testblur_autogen_timestamp_deps.dir/all
+CMakeFiles/testblur.dir/all: CMakeFiles/testblur_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur.dir/build.make CMakeFiles/testblur.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur.dir/build.make CMakeFiles/testblur.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=36,37,38,39 "Built target testblur"
+.PHONY : CMakeFiles/testblur.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testblur.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 20
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testblur.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/testblur.dir/rule
+
+# Convenience name for target.
+testblur: CMakeFiles/testblur.dir/rule
+.PHONY : testblur
+
+# clean rule for target.
+CMakeFiles/testblur.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur.dir/build.make CMakeFiles/testblur.dir/clean
+.PHONY : CMakeFiles/testblur.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testblursection.dir
+
+# All Build rule for target.
+CMakeFiles/testblursection.dir/all: CMakeFiles/proc.dir/all
+CMakeFiles/testblursection.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/testblursection.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/testblursection.dir/all: CMakeFiles/testblursection_autogen_timestamp_deps.dir/all
+CMakeFiles/testblursection.dir/all: CMakeFiles/testblursection_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection.dir/build.make CMakeFiles/testblursection.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection.dir/build.make CMakeFiles/testblursection.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=41,42,43,44 "Built target testblursection"
+.PHONY : CMakeFiles/testblursection.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testblursection.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 20
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testblursection.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/testblursection.dir/rule
+
+# Convenience name for target.
+testblursection: CMakeFiles/testblursection.dir/rule
+.PHONY : testblursection
+
+# clean rule for target.
+CMakeFiles/testblursection.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection.dir/build.make CMakeFiles/testblursection.dir/clean
+.PHONY : CMakeFiles/testblursection.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/gui_autogen_timestamp_deps.dir
 
 # All Build rule for target.
 CMakeFiles/gui_autogen_timestamp_deps.dir/all: CMakeFiles/proc.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_autogen_timestamp_deps.dir/build.make CMakeFiles/gui_autogen_timestamp_deps.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_autogen_timestamp_deps.dir/build.make CMakeFiles/gui_autogen_timestamp_deps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num= "Built target gui_autogen_timestamp_deps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num= "Built target gui_autogen_timestamp_deps"
 .PHONY : CMakeFiles/gui_autogen_timestamp_deps.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gui_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gui_autogen_timestamp_deps.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
 .PHONY : CMakeFiles/gui_autogen_timestamp_deps.dir/rule
 
 # Convenience name for target.
@@ -201,14 +398,14 @@ CMakeFiles/gui_autogen_timestamp_deps.dir/clean:
 CMakeFiles/gui_autogen.dir/all: CMakeFiles/gui_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_autogen.dir/build.make CMakeFiles/gui_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_autogen.dir/build.make CMakeFiles/gui_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=5 "Built target gui_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=25 "Built target gui_autogen"
 .PHONY : CMakeFiles/gui_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gui_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gui_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
 .PHONY : CMakeFiles/gui_autogen.dir/rule
 
 # Convenience name for target.
@@ -227,14 +424,14 @@ CMakeFiles/gui_autogen.dir/clean:
 CMakeFiles/proc_autogen_timestamp_deps.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/proc_autogen_timestamp_deps.dir/build.make CMakeFiles/proc_autogen_timestamp_deps.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/proc_autogen_timestamp_deps.dir/build.make CMakeFiles/proc_autogen_timestamp_deps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num= "Built target proc_autogen_timestamp_deps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num= "Built target proc_autogen_timestamp_deps"
 .PHONY : CMakeFiles/proc_autogen_timestamp_deps.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/proc_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/proc_autogen_timestamp_deps.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
 .PHONY : CMakeFiles/proc_autogen_timestamp_deps.dir/rule
 
 # Convenience name for target.
@@ -253,14 +450,14 @@ CMakeFiles/proc_autogen_timestamp_deps.dir/clean:
 CMakeFiles/proc_autogen.dir/all: CMakeFiles/proc_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/proc_autogen.dir/build.make CMakeFiles/proc_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/proc_autogen.dir/build.make CMakeFiles/proc_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=15 "Built target proc_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=35 "Built target proc_autogen"
 .PHONY : CMakeFiles/proc_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/proc_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/proc_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
 .PHONY : CMakeFiles/proc_autogen.dir/rule
 
 # Convenience name for target.
@@ -280,14 +477,14 @@ CMakeFiles/image_proc_autogen_timestamp_deps.dir/all: CMakeFiles/gui.dir/all
 CMakeFiles/image_proc_autogen_timestamp_deps.dir/all: CMakeFiles/proc.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_proc_autogen_timestamp_deps.dir/build.make CMakeFiles/image_proc_autogen_timestamp_deps.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_proc_autogen_timestamp_deps.dir/build.make CMakeFiles/image_proc_autogen_timestamp_deps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num= "Built target image_proc_autogen_timestamp_deps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num= "Built target image_proc_autogen_timestamp_deps"
 .PHONY : CMakeFiles/image_proc_autogen_timestamp_deps.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/image_proc_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/image_proc_autogen_timestamp_deps.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
 .PHONY : CMakeFiles/image_proc_autogen_timestamp_deps.dir/rule
 
 # Convenience name for target.
@@ -306,14 +503,14 @@ CMakeFiles/image_proc_autogen_timestamp_deps.dir/clean:
 CMakeFiles/image_proc_autogen.dir/all: CMakeFiles/image_proc_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_proc_autogen.dir/build.make CMakeFiles/image_proc_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_proc_autogen.dir/build.make CMakeFiles/image_proc_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=10 "Built target image_proc_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=30 "Built target image_proc_autogen"
 .PHONY : CMakeFiles/image_proc_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/image_proc_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/image_proc_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
 .PHONY : CMakeFiles/image_proc_autogen.dir/rule
 
 # Convenience name for target.
@@ -324,6 +521,538 @@ image_proc_autogen: CMakeFiles/image_proc_autogen.dir/rule
 CMakeFiles/image_proc_autogen.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_proc_autogen.dir/build.make CMakeFiles/image_proc_autogen.dir/clean
 .PHONY : CMakeFiles/image_proc_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testgrayscale_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/all: CMakeFiles/proc.dir/all
+CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/build.make CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/build.make CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num= "Built target testgrayscale_autogen_timestamp_deps"
+.PHONY : CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+testgrayscale_autogen_timestamp_deps: CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/rule
+.PHONY : testgrayscale_autogen_timestamp_deps
+
+# clean rule for target.
+CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/build.make CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testgrayscale_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/testgrayscale_autogen.dir/all: CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale_autogen.dir/build.make CMakeFiles/testgrayscale_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale_autogen.dir/build.make CMakeFiles/testgrayscale_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=50 "Built target testgrayscale_autogen"
+.PHONY : CMakeFiles/testgrayscale_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testgrayscale_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testgrayscale_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/testgrayscale_autogen.dir/rule
+
+# Convenience name for target.
+testgrayscale_autogen: CMakeFiles/testgrayscale_autogen.dir/rule
+.PHONY : testgrayscale_autogen
+
+# clean rule for target.
+CMakeFiles/testgrayscale_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale_autogen.dir/build.make CMakeFiles/testgrayscale_autogen.dir/clean
+.PHONY : CMakeFiles/testgrayscale_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/all: CMakeFiles/proc.dir/all
+CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/build.make CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/build.make CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num= "Built target testgrayscalesection_autogen_timestamp_deps"
+.PHONY : CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+testgrayscalesection_autogen_timestamp_deps: CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/rule
+.PHONY : testgrayscalesection_autogen_timestamp_deps
+
+# clean rule for target.
+CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/build.make CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testgrayscalesection_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/testgrayscalesection_autogen.dir/all: CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection_autogen.dir/build.make CMakeFiles/testgrayscalesection_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection_autogen.dir/build.make CMakeFiles/testgrayscalesection_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=55 "Built target testgrayscalesection_autogen"
+.PHONY : CMakeFiles/testgrayscalesection_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testgrayscalesection_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testgrayscalesection_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/testgrayscalesection_autogen.dir/rule
+
+# Convenience name for target.
+testgrayscalesection_autogen: CMakeFiles/testgrayscalesection_autogen.dir/rule
+.PHONY : testgrayscalesection_autogen
+
+# clean rule for target.
+CMakeFiles/testgrayscalesection_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection_autogen.dir/build.make CMakeFiles/testgrayscalesection_autogen.dir/clean
+.PHONY : CMakeFiles/testgrayscalesection_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testblur_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+CMakeFiles/testblur_autogen_timestamp_deps.dir/all: CMakeFiles/proc.dir/all
+CMakeFiles/testblur_autogen_timestamp_deps.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur_autogen_timestamp_deps.dir/build.make CMakeFiles/testblur_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur_autogen_timestamp_deps.dir/build.make CMakeFiles/testblur_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num= "Built target testblur_autogen_timestamp_deps"
+.PHONY : CMakeFiles/testblur_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testblur_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testblur_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/testblur_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+testblur_autogen_timestamp_deps: CMakeFiles/testblur_autogen_timestamp_deps.dir/rule
+.PHONY : testblur_autogen_timestamp_deps
+
+# clean rule for target.
+CMakeFiles/testblur_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur_autogen_timestamp_deps.dir/build.make CMakeFiles/testblur_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/testblur_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testblur_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/testblur_autogen.dir/all: CMakeFiles/testblur_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur_autogen.dir/build.make CMakeFiles/testblur_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur_autogen.dir/build.make CMakeFiles/testblur_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=40 "Built target testblur_autogen"
+.PHONY : CMakeFiles/testblur_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testblur_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testblur_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/testblur_autogen.dir/rule
+
+# Convenience name for target.
+testblur_autogen: CMakeFiles/testblur_autogen.dir/rule
+.PHONY : testblur_autogen
+
+# clean rule for target.
+CMakeFiles/testblur_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur_autogen.dir/build.make CMakeFiles/testblur_autogen.dir/clean
+.PHONY : CMakeFiles/testblur_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testblursection_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+CMakeFiles/testblursection_autogen_timestamp_deps.dir/all: CMakeFiles/proc.dir/all
+CMakeFiles/testblursection_autogen_timestamp_deps.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection_autogen_timestamp_deps.dir/build.make CMakeFiles/testblursection_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection_autogen_timestamp_deps.dir/build.make CMakeFiles/testblursection_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num= "Built target testblursection_autogen_timestamp_deps"
+.PHONY : CMakeFiles/testblursection_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testblursection_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testblursection_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/testblursection_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+testblursection_autogen_timestamp_deps: CMakeFiles/testblursection_autogen_timestamp_deps.dir/rule
+.PHONY : testblursection_autogen_timestamp_deps
+
+# clean rule for target.
+CMakeFiles/testblursection_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection_autogen_timestamp_deps.dir/build.make CMakeFiles/testblursection_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/testblursection_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testblursection_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/testblursection_autogen.dir/all: CMakeFiles/testblursection_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection_autogen.dir/build.make CMakeFiles/testblursection_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection_autogen.dir/build.make CMakeFiles/testblursection_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=45 "Built target testblursection_autogen"
+.PHONY : CMakeFiles/testblursection_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testblursection_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testblursection_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/testblursection_autogen.dir/rule
+
+# Convenience name for target.
+testblursection_autogen: CMakeFiles/testblursection_autogen.dir/rule
+.PHONY : testblursection_autogen
+
+# clean rule for target.
+CMakeFiles/testblursection_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection_autogen.dir/build.make CMakeFiles/testblursection_autogen.dir/clean
+.PHONY : CMakeFiles/testblursection_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+
+# All Build rule for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/all
+_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=1,2,3,4 "Built target gmock"
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
+
+# Convenience name for target.
+gmock: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
+.PHONY : gmock
+
+# clean rule for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+
+# All Build rule for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
+_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/all
+_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=6,7,8,9 "Built target gmock_main"
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
+
+# Convenience name for target.
+gmock_main: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
+.PHONY : gmock_main
+
+# clean rule for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num= "Built target gmock_autogen_timestamp_deps"
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+gmock_autogen_timestamp_deps: _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/rule
+.PHONY : gmock_autogen_timestamp_deps
+
+# clean rule for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/clean
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir
+
+# All Build rule for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=5 "Built target gmock_autogen"
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/rule
+
+# Convenience name for target.
+gmock_autogen: _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/rule
+.PHONY : gmock_autogen
+
+# clean rule for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/clean
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num= "Built target gmock_main_autogen_timestamp_deps"
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+gmock_main_autogen_timestamp_deps: _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/rule
+.PHONY : gmock_main_autogen_timestamp_deps
+
+# clean rule for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/clean
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir
+
+# All Build rule for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=10 "Built target gmock_main_autogen"
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/rule
+
+# Convenience name for target.
+gmock_main_autogen: _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/rule
+.PHONY : gmock_main_autogen
+
+# clean rule for target.
+_deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/clean
+.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/googletest-build/googletest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/all
+_deps/googletest-build/googletest/CMakeFiles/gtest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=11,12,13,14 "Built target gtest"
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
+.PHONY : gtest
+
+# clean rule for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/all
+_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=16,17,18,19 "Built target gtest_main"
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
+.PHONY : gtest_main
+
+# clean rule for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num= "Built target gtest_autogen_timestamp_deps"
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+gtest_autogen_timestamp_deps: _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/rule
+.PHONY : gtest_autogen_timestamp_deps
+
+# clean rule for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/clean
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir
+
+# All Build rule for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=15 "Built target gtest_autogen"
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/rule
+
+# Convenience name for target.
+gtest_autogen: _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/rule
+.PHONY : gtest_autogen
+
+# clean rule for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/clean
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num= "Built target gtest_main_autogen_timestamp_deps"
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+gtest_main_autogen_timestamp_deps: _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/rule
+.PHONY : gtest_main_autogen_timestamp_deps
+
+# clean rule for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/clean
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir
+
+# All Build rule for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=20 "Built target gtest_main_autogen"
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/rule
+
+# Convenience name for target.
+gtest_main_autogen: _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/rule
+.PHONY : gtest_main_autogen
+
+# clean rule for target.
+_deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/clean
+.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,0 +1,5 @@
+if(EXISTS "/home/alfasamec3d/media/programs/Image_processor/build/testblur[1]_tests.cmake")
+  include("/home/alfasamec3d/media/programs/Image_processor/build/testblur[1]_tests.cmake")
+else()
+  add_test(testblur_NOT_BUILT testblur_NOT_BUILT)
+endif()

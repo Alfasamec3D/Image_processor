@@ -1,11 +1,12 @@
 #ifndef GUI_HPP
 #define GUI_HPP
 
-#include"proc.hpp"
-
 #include <QLabel>
 #include <QMainWindow>
 #include <QPixmap>
+#include <QSlider>
+
+#include "proc.hpp"
 
 QImage cvMatToQImage(const cv::Mat& mat);
 
@@ -14,20 +15,24 @@ class MainAppWindow : public QMainWindow {
  public:
   MainAppWindow();
   virtual ~MainAppWindow() = default;
-  
+
  private slots:
   void loadImage();
   void applyGrayscale();
   void saveImage();
-  void applyBlur(int depth);
   void showBlurSlider();
+  void rotateImage(int rotateCode);
+  void brightness_contrast_Image(int a, int b);
+  void flipImage(int flipCode);
 
  protected:
   void resizeEvent(QResizeEvent*);
 
  private:
-  QLabel* imageLabel;
+  QLabel* imageLabel=nullptr;
   cv::Mat currentProcessedImage;
+  QSlider* blurSlider=nullptr;
+  cv::Mat baseImage;
 };
 
 #endif

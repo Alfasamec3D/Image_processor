@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/Image_processor
+CMAKE_SOURCE_DIR = /home/alfasamec3d/media/programs/Image_processor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
+CMAKE_BINARY_DIR = /home/alfasamec3d/media/programs/Image_processor/build
 
 # Utility rule file for gui_autogen_timestamp_deps.
 
@@ -67,10 +67,10 @@ include CMakeFiles/gui_autogen_timestamp_deps.dir/compiler_depend.make
 include CMakeFiles/gui_autogen_timestamp_deps.dir/progress.make
 
 CMakeFiles/gui_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
-CMakeFiles/gui_autogen_timestamp_deps: libproc.a
 CMakeFiles/gui_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
 CMakeFiles/gui_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
 CMakeFiles/gui_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
+CMakeFiles/gui_autogen_timestamp_deps: libproc.a
 
 gui_autogen_timestamp_deps: CMakeFiles/gui_autogen_timestamp_deps
 gui_autogen_timestamp_deps: CMakeFiles/gui_autogen_timestamp_deps.dir/build.make
@@ -85,6 +85,6 @@ CMakeFiles/gui_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/gui_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/gui_autogen_timestamp_deps.dir/depend:
-	cd /mnt/9C468886468862BE/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/gui_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/alfasamec3d/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/gui_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/gui_autogen_timestamp_deps.dir/depend
 

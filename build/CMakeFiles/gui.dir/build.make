@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/Image_processor
+CMAKE_SOURCE_DIR = /home/alfasamec3d/media/programs/Image_processor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
+CMAKE_BINARY_DIR = /home/alfasamec3d/media/programs/Image_processor/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gui.dir/depend.make
@@ -72,37 +72,37 @@ include CMakeFiles/gui.dir/flags.make
 gui_autogen/timestamp: /usr/lib/qt5/bin/moc
 gui_autogen/timestamp: /usr/lib/qt5/bin/uic
 gui_autogen/timestamp: CMakeFiles/gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target gui"
-	/usr/bin/cmake -E cmake_autogen /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/gui_autogen.dir/AutogenInfo.json Release
-	/usr/bin/cmake -E touch /mnt/9C468886468862BE/media/programs/Image_processor/build/gui_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target gui"
+	/usr/bin/cmake -E cmake_autogen /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/gui_autogen.dir/AutogenInfo.json Release
+	/usr/bin/cmake -E touch /home/alfasamec3d/media/programs/Image_processor/build/gui_autogen/timestamp
 
 CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o: CMakeFiles/gui.dir/flags.make
 CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o: gui_autogen/mocs_compilation.cpp
 CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o: CMakeFiles/gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o -MF CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o -c /mnt/9C468886468862BE/media/programs/Image_processor/build/gui_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o -MF CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o -c /home/alfasamec3d/media/programs/Image_processor/build/gui_autogen/mocs_compilation.cpp
 
 CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/9C468886468862BE/media/programs/Image_processor/build/gui_autogen/mocs_compilation.cpp > CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alfasamec3d/media/programs/Image_processor/build/gui_autogen/mocs_compilation.cpp > CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/9C468886468862BE/media/programs/Image_processor/build/gui_autogen/mocs_compilation.cpp -o CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alfasamec3d/media/programs/Image_processor/build/gui_autogen/mocs_compilation.cpp -o CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/gui.dir/src/gui.cpp.o: CMakeFiles/gui.dir/flags.make
-CMakeFiles/gui.dir/src/gui.cpp.o: /mnt/9C468886468862BE/media/programs/Image_processor/src/gui.cpp
+CMakeFiles/gui.dir/src/gui.cpp.o: /home/alfasamec3d/media/programs/Image_processor/src/gui.cpp
 CMakeFiles/gui.dir/src/gui.cpp.o: CMakeFiles/gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gui.dir/src/gui.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui.dir/src/gui.cpp.o -MF CMakeFiles/gui.dir/src/gui.cpp.o.d -o CMakeFiles/gui.dir/src/gui.cpp.o -c /mnt/9C468886468862BE/media/programs/Image_processor/src/gui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gui.dir/src/gui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gui.dir/src/gui.cpp.o -MF CMakeFiles/gui.dir/src/gui.cpp.o.d -o CMakeFiles/gui.dir/src/gui.cpp.o -c /home/alfasamec3d/media/programs/Image_processor/src/gui.cpp
 
 CMakeFiles/gui.dir/src/gui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gui.dir/src/gui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/9C468886468862BE/media/programs/Image_processor/src/gui.cpp > CMakeFiles/gui.dir/src/gui.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alfasamec3d/media/programs/Image_processor/src/gui.cpp > CMakeFiles/gui.dir/src/gui.cpp.i
 
 CMakeFiles/gui.dir/src/gui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gui.dir/src/gui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/9C468886468862BE/media/programs/Image_processor/src/gui.cpp -o CMakeFiles/gui.dir/src/gui.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alfasamec3d/media/programs/Image_processor/src/gui.cpp -o CMakeFiles/gui.dir/src/gui.cpp.s
 
 # Object files for target gui
 gui_OBJECTS = \
@@ -116,7 +116,7 @@ libgui.a: CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o
 libgui.a: CMakeFiles/gui.dir/src/gui.cpp.o
 libgui.a: CMakeFiles/gui.dir/build.make
 libgui.a: CMakeFiles/gui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libgui.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libgui.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/gui.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gui.dir/link.txt --verbose=$(VERBOSE)
 
@@ -129,6 +129,6 @@ CMakeFiles/gui.dir/clean:
 .PHONY : CMakeFiles/gui.dir/clean
 
 CMakeFiles/gui.dir/depend: gui_autogen/timestamp
-	cd /mnt/9C468886468862BE/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/gui.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/alfasamec3d/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/gui.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/gui.dir/depend
 

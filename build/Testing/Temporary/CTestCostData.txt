@@ -1,0 +1,5 @@
+ImageProcessingTest.GrayscaleConversion 11 0.0178329
+ImageProcessingTest.GrayscaleSectionConversion 9 0.0196593
+ImageProcessingTest.BlurSectionConversion 4 0.0331766
+ImageProcessingTest.BlurConversion 1 0.184642
+---

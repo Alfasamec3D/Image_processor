@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/Image_processor
+CMAKE_SOURCE_DIR = /home/alfasamec3d/media/programs/Image_processor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
+CMAKE_BINARY_DIR = /home/alfasamec3d/media/programs/Image_processor/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -95,11 +95,56 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles /mnt/9C468886468862BE/media/programs/Image_processor/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles /home/alfasamec3d/media/programs/Image_processor/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -164,6 +209,58 @@ image_proc: cmake_check_build_system
 image_proc/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_proc.dir/build.make CMakeFiles/image_proc.dir/build
 .PHONY : image_proc/fast
+
+#=============================================================================
+# Target rules for targets named testgrayscale
+
+# Build rule for target.
+testgrayscale: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testgrayscale
+.PHONY : testgrayscale
+
+# fast build rule for target.
+testgrayscale/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale.dir/build.make CMakeFiles/testgrayscale.dir/build
+.PHONY : testgrayscale/fast
+
+#=============================================================================
+# Target rules for targets named testgrayscalesection
+
+# Build rule for target.
+testgrayscalesection: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testgrayscalesection
+.PHONY : testgrayscalesection
+
+# fast build rule for target.
+testgrayscalesection/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection.dir/build.make CMakeFiles/testgrayscalesection.dir/build
+.PHONY : testgrayscalesection/fast
+
+#=============================================================================
+# Target rules for targets named testblur
+
+# Build rule for target.
+testblur: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testblur
+.PHONY : testblur
+
+# fast build rule for target.
+testblur/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur.dir/build.make CMakeFiles/testblur.dir/build
+.PHONY : testblur/fast
+
+#=============================================================================
+# Target rules for targets named testblursection
+
+# Build rule for target.
+testblursection: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testblursection
+.PHONY : testblursection
+
+# fast build rule for target.
+testblursection/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection.dir/build.make CMakeFiles/testblursection.dir/build
+.PHONY : testblursection/fast
 
 #=============================================================================
 # Target rules for targets named gui_autogen_timestamp_deps
@@ -242,6 +339,266 @@ image_proc_autogen: cmake_check_build_system
 image_proc_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_proc_autogen.dir/build.make CMakeFiles/image_proc_autogen.dir/build
 .PHONY : image_proc_autogen/fast
+
+#=============================================================================
+# Target rules for targets named testgrayscale_autogen_timestamp_deps
+
+# Build rule for target.
+testgrayscale_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testgrayscale_autogen_timestamp_deps
+.PHONY : testgrayscale_autogen_timestamp_deps
+
+# fast build rule for target.
+testgrayscale_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/build.make CMakeFiles/testgrayscale_autogen_timestamp_deps.dir/build
+.PHONY : testgrayscale_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named testgrayscale_autogen
+
+# Build rule for target.
+testgrayscale_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testgrayscale_autogen
+.PHONY : testgrayscale_autogen
+
+# fast build rule for target.
+testgrayscale_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale_autogen.dir/build.make CMakeFiles/testgrayscale_autogen.dir/build
+.PHONY : testgrayscale_autogen/fast
+
+#=============================================================================
+# Target rules for targets named testgrayscalesection_autogen_timestamp_deps
+
+# Build rule for target.
+testgrayscalesection_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testgrayscalesection_autogen_timestamp_deps
+.PHONY : testgrayscalesection_autogen_timestamp_deps
+
+# fast build rule for target.
+testgrayscalesection_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/build.make CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/build
+.PHONY : testgrayscalesection_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named testgrayscalesection_autogen
+
+# Build rule for target.
+testgrayscalesection_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testgrayscalesection_autogen
+.PHONY : testgrayscalesection_autogen
+
+# fast build rule for target.
+testgrayscalesection_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection_autogen.dir/build.make CMakeFiles/testgrayscalesection_autogen.dir/build
+.PHONY : testgrayscalesection_autogen/fast
+
+#=============================================================================
+# Target rules for targets named testblur_autogen_timestamp_deps
+
+# Build rule for target.
+testblur_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testblur_autogen_timestamp_deps
+.PHONY : testblur_autogen_timestamp_deps
+
+# fast build rule for target.
+testblur_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur_autogen_timestamp_deps.dir/build.make CMakeFiles/testblur_autogen_timestamp_deps.dir/build
+.PHONY : testblur_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named testblur_autogen
+
+# Build rule for target.
+testblur_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testblur_autogen
+.PHONY : testblur_autogen
+
+# fast build rule for target.
+testblur_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur_autogen.dir/build.make CMakeFiles/testblur_autogen.dir/build
+.PHONY : testblur_autogen/fast
+
+#=============================================================================
+# Target rules for targets named testblursection_autogen_timestamp_deps
+
+# Build rule for target.
+testblursection_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testblursection_autogen_timestamp_deps
+.PHONY : testblursection_autogen_timestamp_deps
+
+# fast build rule for target.
+testblursection_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection_autogen_timestamp_deps.dir/build.make CMakeFiles/testblursection_autogen_timestamp_deps.dir/build
+.PHONY : testblursection_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named testblursection_autogen
+
+# Build rule for target.
+testblursection_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testblursection_autogen
+.PHONY : testblursection_autogen
+
+# fast build rule for target.
+testblursection_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection_autogen.dir/build.make CMakeFiles/testblursection_autogen.dir/build
+.PHONY : testblursection_autogen/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gmock_autogen_timestamp_deps
+
+# Build rule for target.
+gmock_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_autogen_timestamp_deps
+.PHONY : gmock_autogen_timestamp_deps
+
+# fast build rule for target.
+gmock_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen_timestamp_deps.dir/build
+.PHONY : gmock_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named gmock_autogen
+
+# Build rule for target.
+gmock_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_autogen
+.PHONY : gmock_autogen
+
+# fast build rule for target.
+gmock_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/build
+.PHONY : gmock_autogen/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main_autogen_timestamp_deps
+
+# Build rule for target.
+gmock_main_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main_autogen_timestamp_deps
+.PHONY : gmock_main_autogen_timestamp_deps
+
+# fast build rule for target.
+gmock_main_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/build
+.PHONY : gmock_main_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main_autogen
+
+# Build rule for target.
+gmock_main_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main_autogen
+.PHONY : gmock_main_autogen
+
+# fast build rule for target.
+gmock_main_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/build
+.PHONY : gmock_main_autogen/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest_autogen_timestamp_deps
+
+# Build rule for target.
+gtest_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_autogen_timestamp_deps
+.PHONY : gtest_autogen_timestamp_deps
+
+# fast build rule for target.
+gtest_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_autogen_timestamp_deps.dir/build
+.PHONY : gtest_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named gtest_autogen
+
+# Build rule for target.
+gtest_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_autogen
+.PHONY : gtest_autogen
+
+# fast build rule for target.
+gtest_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/build
+.PHONY : gtest_autogen/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main_autogen_timestamp_deps
+
+# Build rule for target.
+gtest_main_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main_autogen_timestamp_deps
+.PHONY : gtest_main_autogen_timestamp_deps
+
+# fast build rule for target.
+gtest_main_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/build
+.PHONY : gtest_main_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main_autogen
+
+# Build rule for target.
+gtest_main_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main_autogen
+.PHONY : gtest_main_autogen
+
+# fast build rule for target.
+gtest_main_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/build
+.PHONY : gtest_main_autogen/fast
 
 gui_autogen/mocs_compilation.o: gui_autogen/mocs_compilation.cpp.o
 .PHONY : gui_autogen/mocs_compilation.o
@@ -387,6 +744,198 @@ src/proc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/proc.dir/build.make CMakeFiles/proc.dir/src/proc.cpp.s
 .PHONY : src/proc.cpp.s
 
+testblur_autogen/mocs_compilation.o: testblur_autogen/mocs_compilation.cpp.o
+.PHONY : testblur_autogen/mocs_compilation.o
+
+# target to build an object file
+testblur_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur.dir/build.make CMakeFiles/testblur.dir/testblur_autogen/mocs_compilation.cpp.o
+.PHONY : testblur_autogen/mocs_compilation.cpp.o
+
+testblur_autogen/mocs_compilation.i: testblur_autogen/mocs_compilation.cpp.i
+.PHONY : testblur_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+testblur_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur.dir/build.make CMakeFiles/testblur.dir/testblur_autogen/mocs_compilation.cpp.i
+.PHONY : testblur_autogen/mocs_compilation.cpp.i
+
+testblur_autogen/mocs_compilation.s: testblur_autogen/mocs_compilation.cpp.s
+.PHONY : testblur_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+testblur_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur.dir/build.make CMakeFiles/testblur.dir/testblur_autogen/mocs_compilation.cpp.s
+.PHONY : testblur_autogen/mocs_compilation.cpp.s
+
+testblursection_autogen/mocs_compilation.o: testblursection_autogen/mocs_compilation.cpp.o
+.PHONY : testblursection_autogen/mocs_compilation.o
+
+# target to build an object file
+testblursection_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection.dir/build.make CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o
+.PHONY : testblursection_autogen/mocs_compilation.cpp.o
+
+testblursection_autogen/mocs_compilation.i: testblursection_autogen/mocs_compilation.cpp.i
+.PHONY : testblursection_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+testblursection_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection.dir/build.make CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.i
+.PHONY : testblursection_autogen/mocs_compilation.cpp.i
+
+testblursection_autogen/mocs_compilation.s: testblursection_autogen/mocs_compilation.cpp.s
+.PHONY : testblursection_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+testblursection_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection.dir/build.make CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.s
+.PHONY : testblursection_autogen/mocs_compilation.cpp.s
+
+testgrayscale_autogen/mocs_compilation.o: testgrayscale_autogen/mocs_compilation.cpp.o
+.PHONY : testgrayscale_autogen/mocs_compilation.o
+
+# target to build an object file
+testgrayscale_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale.dir/build.make CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o
+.PHONY : testgrayscale_autogen/mocs_compilation.cpp.o
+
+testgrayscale_autogen/mocs_compilation.i: testgrayscale_autogen/mocs_compilation.cpp.i
+.PHONY : testgrayscale_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+testgrayscale_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale.dir/build.make CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.i
+.PHONY : testgrayscale_autogen/mocs_compilation.cpp.i
+
+testgrayscale_autogen/mocs_compilation.s: testgrayscale_autogen/mocs_compilation.cpp.s
+.PHONY : testgrayscale_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+testgrayscale_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale.dir/build.make CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.s
+.PHONY : testgrayscale_autogen/mocs_compilation.cpp.s
+
+testgrayscalesection_autogen/mocs_compilation.o: testgrayscalesection_autogen/mocs_compilation.cpp.o
+.PHONY : testgrayscalesection_autogen/mocs_compilation.o
+
+# target to build an object file
+testgrayscalesection_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection.dir/build.make CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.o
+.PHONY : testgrayscalesection_autogen/mocs_compilation.cpp.o
+
+testgrayscalesection_autogen/mocs_compilation.i: testgrayscalesection_autogen/mocs_compilation.cpp.i
+.PHONY : testgrayscalesection_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+testgrayscalesection_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection.dir/build.make CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.i
+.PHONY : testgrayscalesection_autogen/mocs_compilation.cpp.i
+
+testgrayscalesection_autogen/mocs_compilation.s: testgrayscalesection_autogen/mocs_compilation.cpp.s
+.PHONY : testgrayscalesection_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+testgrayscalesection_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection.dir/build.make CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.s
+.PHONY : testgrayscalesection_autogen/mocs_compilation.cpp.s
+
+tests/testBlur.o: tests/testBlur.cpp.o
+.PHONY : tests/testBlur.o
+
+# target to build an object file
+tests/testBlur.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur.dir/build.make CMakeFiles/testblur.dir/tests/testBlur.cpp.o
+.PHONY : tests/testBlur.cpp.o
+
+tests/testBlur.i: tests/testBlur.cpp.i
+.PHONY : tests/testBlur.i
+
+# target to preprocess a source file
+tests/testBlur.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur.dir/build.make CMakeFiles/testblur.dir/tests/testBlur.cpp.i
+.PHONY : tests/testBlur.cpp.i
+
+tests/testBlur.s: tests/testBlur.cpp.s
+.PHONY : tests/testBlur.s
+
+# target to generate assembly for a file
+tests/testBlur.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblur.dir/build.make CMakeFiles/testblur.dir/tests/testBlur.cpp.s
+.PHONY : tests/testBlur.cpp.s
+
+tests/testBlurSection.o: tests/testBlurSection.cpp.o
+.PHONY : tests/testBlurSection.o
+
+# target to build an object file
+tests/testBlurSection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection.dir/build.make CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o
+.PHONY : tests/testBlurSection.cpp.o
+
+tests/testBlurSection.i: tests/testBlurSection.cpp.i
+.PHONY : tests/testBlurSection.i
+
+# target to preprocess a source file
+tests/testBlurSection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection.dir/build.make CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.i
+.PHONY : tests/testBlurSection.cpp.i
+
+tests/testBlurSection.s: tests/testBlurSection.cpp.s
+.PHONY : tests/testBlurSection.s
+
+# target to generate assembly for a file
+tests/testBlurSection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testblursection.dir/build.make CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.s
+.PHONY : tests/testBlurSection.cpp.s
+
+tests/testGrayscale.o: tests/testGrayscale.cpp.o
+.PHONY : tests/testGrayscale.o
+
+# target to build an object file
+tests/testGrayscale.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale.dir/build.make CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o
+.PHONY : tests/testGrayscale.cpp.o
+
+tests/testGrayscale.i: tests/testGrayscale.cpp.i
+.PHONY : tests/testGrayscale.i
+
+# target to preprocess a source file
+tests/testGrayscale.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale.dir/build.make CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.i
+.PHONY : tests/testGrayscale.cpp.i
+
+tests/testGrayscale.s: tests/testGrayscale.cpp.s
+.PHONY : tests/testGrayscale.s
+
+# target to generate assembly for a file
+tests/testGrayscale.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscale.dir/build.make CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.s
+.PHONY : tests/testGrayscale.cpp.s
+
+tests/testGrayscaleSection.o: tests/testGrayscaleSection.cpp.o
+.PHONY : tests/testGrayscaleSection.o
+
+# target to build an object file
+tests/testGrayscaleSection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection.dir/build.make CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.o
+.PHONY : tests/testGrayscaleSection.cpp.o
+
+tests/testGrayscaleSection.i: tests/testGrayscaleSection.cpp.i
+.PHONY : tests/testGrayscaleSection.i
+
+# target to preprocess a source file
+tests/testGrayscaleSection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection.dir/build.make CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.i
+.PHONY : tests/testGrayscaleSection.cpp.i
+
+tests/testGrayscaleSection.s: tests/testGrayscaleSection.cpp.s
+.PHONY : tests/testGrayscaleSection.s
+
+# target to generate assembly for a file
+tests/testGrayscaleSection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testgrayscalesection.dir/build.make CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.s
+.PHONY : tests/testGrayscaleSection.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -394,17 +943,45 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... gmock_autogen"
+	@echo "... gmock_autogen_timestamp_deps"
+	@echo "... gmock_main_autogen"
+	@echo "... gmock_main_autogen_timestamp_deps"
+	@echo "... gtest_autogen"
+	@echo "... gtest_autogen_timestamp_deps"
+	@echo "... gtest_main_autogen"
+	@echo "... gtest_main_autogen_timestamp_deps"
 	@echo "... gui_autogen"
 	@echo "... gui_autogen_timestamp_deps"
 	@echo "... image_proc_autogen"
 	@echo "... image_proc_autogen_timestamp_deps"
 	@echo "... proc_autogen"
 	@echo "... proc_autogen_timestamp_deps"
+	@echo "... testblur_autogen"
+	@echo "... testblur_autogen_timestamp_deps"
+	@echo "... testblursection_autogen"
+	@echo "... testblursection_autogen_timestamp_deps"
+	@echo "... testgrayscale_autogen"
+	@echo "... testgrayscale_autogen_timestamp_deps"
+	@echo "... testgrayscalesection_autogen"
+	@echo "... testgrayscalesection_autogen_timestamp_deps"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
 	@echo "... gui"
 	@echo "... image_proc"
 	@echo "... proc"
+	@echo "... testblur"
+	@echo "... testblursection"
+	@echo "... testgrayscale"
+	@echo "... testgrayscalesection"
 	@echo "... gui_autogen/mocs_compilation.o"
 	@echo "... gui_autogen/mocs_compilation.i"
 	@echo "... gui_autogen/mocs_compilation.s"
@@ -423,6 +1000,30 @@ help:
 	@echo "... src/proc.o"
 	@echo "... src/proc.i"
 	@echo "... src/proc.s"
+	@echo "... testblur_autogen/mocs_compilation.o"
+	@echo "... testblur_autogen/mocs_compilation.i"
+	@echo "... testblur_autogen/mocs_compilation.s"
+	@echo "... testblursection_autogen/mocs_compilation.o"
+	@echo "... testblursection_autogen/mocs_compilation.i"
+	@echo "... testblursection_autogen/mocs_compilation.s"
+	@echo "... testgrayscale_autogen/mocs_compilation.o"
+	@echo "... testgrayscale_autogen/mocs_compilation.i"
+	@echo "... testgrayscale_autogen/mocs_compilation.s"
+	@echo "... testgrayscalesection_autogen/mocs_compilation.o"
+	@echo "... testgrayscalesection_autogen/mocs_compilation.i"
+	@echo "... testgrayscalesection_autogen/mocs_compilation.s"
+	@echo "... tests/testBlur.o"
+	@echo "... tests/testBlur.i"
+	@echo "... tests/testBlur.s"
+	@echo "... tests/testBlurSection.o"
+	@echo "... tests/testBlurSection.i"
+	@echo "... tests/testBlurSection.s"
+	@echo "... tests/testGrayscale.o"
+	@echo "... tests/testGrayscale.i"
+	@echo "... tests/testGrayscale.s"
+	@echo "... tests/testGrayscaleSection.o"
+	@echo "... tests/testGrayscaleSection.i"
+	@echo "... tests/testGrayscaleSection.s"
 .PHONY : help
 
 

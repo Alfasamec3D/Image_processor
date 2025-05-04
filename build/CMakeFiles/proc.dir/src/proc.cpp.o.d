@@ -1,7 +1,7 @@
 CMakeFiles/proc.dir/src/proc.cpp.o: \
- /mnt/9C468886468862BE/media/programs/Image_processor/src/proc.cpp \
+ /home/alfasamec3d/media/programs/Image_processor/src/proc.cpp \
  /usr/include/stdc-predef.h \
- /mnt/9C468886468862BE/media/programs/Image_processor/include/proc.hpp \
+ /home/alfasamec3d/media/programs/Image_processor/include/proc.hpp \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
@@ -278,14 +278,14 @@ CMakeFiles/proc.dir/src/proc.cpp.o: \
  /usr/include/opencv4/opencv2/dnn.hpp \
  /usr/include/opencv4/opencv2/dnn/dnn.hpp \
  /usr/include/opencv4/opencv2/core/async.hpp /usr/include/c++/13/chrono \
- /usr/include/opencv4/opencv2/dnn/../dnn/version.hpp \
+ /usr/include/opencv4/opencv2/dnn/version.hpp \
  /usr/include/opencv4/opencv2/dnn/dict.hpp /usr/include/c++/13/map \
  /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h \
  /usr/include/opencv4/opencv2/dnn/layer.hpp \
  /usr/include/opencv4/opencv2/dnn/dnn.inl.hpp \
  /usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
- /usr/include/opencv4/opencv2/dnn/utils/../dnn.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.hpp \
  /usr/include/opencv4/opencv2/flann.hpp \
  /usr/include/opencv4/opencv2/flann/flann_base.hpp \
  /usr/include/opencv4/opencv2/flann/general.h \
@@ -330,7 +330,7 @@ CMakeFiles/proc.dir/src/proc.cpp.o: \
  /usr/include/opencv4/opencv2/imgcodecs.hpp \
  /usr/include/opencv4/opencv2/videoio.hpp \
  /usr/include/opencv4/opencv2/imgproc.hpp \
- /usr/include/opencv4/opencv2/./imgproc/segmentation.hpp \
+ /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
  /usr/include/opencv4/opencv2/ml.hpp \
  /usr/include/opencv4/opencv2/ml/ml.inl.hpp \
  /usr/include/opencv4/opencv2/objdetect.hpp \

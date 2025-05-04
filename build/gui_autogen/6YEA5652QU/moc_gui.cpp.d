@@ -1,5 +1,5 @@
-/mnt/9C468886468862BE/media/programs/Image_processor/build/gui_autogen/6YEA5652QU/moc_gui.cpp: /mnt/9C468886468862BE/media/programs/Image_processor/include/gui.hpp \
-  /mnt/9C468886468862BE/media/programs/Image_processor/build/gui_autogen/moc_predefs.h \
+/home/alfasamec3d/media/programs/Image_processor/build/gui_autogen/6YEA5652QU/moc_gui.cpp: /home/alfasamec3d/media/programs/Image_processor/include/gui.hpp \
+  /home/alfasamec3d/media/programs/Image_processor/build/gui_autogen/moc_predefs.h \
   /mnt/9C468886468862BE/media/programs/Image_processor/include/proc.hpp \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -471,10 +471,13 @@
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSlider \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \

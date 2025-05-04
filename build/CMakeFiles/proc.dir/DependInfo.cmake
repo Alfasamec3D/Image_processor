@@ -9,8 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "proc_autogen/timestamp" "custom" "proc_autogen/deps"
-  "/home/alfasamec3d/media/programs/Image_processor/build/proc_autogen/mocs_compilation.cpp" "CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o.d"
-  "/home/alfasamec3d/media/programs/Image_processor/src/proc.cpp" "CMakeFiles/proc.dir/src/proc.cpp.o" "gcc" "CMakeFiles/proc.dir/src/proc.cpp.o.d"
+  "/mnt/9C468886468862BE/media/programs/Image_processor/build/proc_autogen/mocs_compilation.cpp" "CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o.d"
+  "/mnt/9C468886468862BE/media/programs/Image_processor/src/proc.cpp" "CMakeFiles/proc.dir/src/proc.cpp.o" "gcc" "CMakeFiles/proc.dir/src/proc.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,12 +1,12 @@
 gui_autogen/timestamp: \
-	/home/alfasamec3d/media/programs/Image_processor/CMakeLists.txt \
-	/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeCCompiler.cmake \
-	/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
-	/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
-	/home/alfasamec3d/media/programs/Image_processor/build/gui_autogen/moc_predefs.h \
-	/home/alfasamec3d/media/programs/Image_processor/include/gui.hpp \
-	/home/alfasamec3d/media/programs/Image_processor/src/gui.cpp \
+	/mnt/9C468886468862BE/media/programs/Image_processor/CMakeLists.txt \
+	/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeCCompiler.cmake \
+	/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
+	/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
+	/mnt/9C468886468862BE/media/programs/Image_processor/build/gui_autogen/moc_predefs.h \
+	/mnt/9C468886468862BE/media/programs/Image_processor/include/gui.hpp \
 	/mnt/9C468886468862BE/media/programs/Image_processor/include/proc.hpp \
+	/mnt/9C468886468862BE/media/programs/Image_processor/src/gui.cpp \
 	/usr/include/asm-generic/errno-base.h \
 	/usr/include/asm-generic/errno.h \
 	/usr/include/assert.h \

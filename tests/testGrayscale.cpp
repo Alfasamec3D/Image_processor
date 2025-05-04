@@ -1,6 +1,6 @@
 #include "proc.hpp"
 #include <gtest/gtest.h>
-#include <thread>
+#include <thread> 
 
 TEST(ImageProcessingTest, GrayscaleConversion) { 
   int numthreads =std::thread::hardware_concurrency();

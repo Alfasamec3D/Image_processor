@@ -22,17 +22,21 @@ class MainAppWindow : public QMainWindow {
   void saveImage();
   void showBlurSlider();
   void rotateImage(int rotateCode);
-  void brightness_contrast_Image(int a, int b);
+  void showBrightContrastSlider();
   void flipImage(int flipCode);
 
  protected:
   void resizeEvent(QResizeEvent*);
 
  private:
-  QLabel* imageLabel=nullptr;
+  QLabel* imageLabel = nullptr;
   cv::Mat currentProcessedImage;
-  QSlider* blurSlider=nullptr;
+  QSlider* brightSlider = nullptr;
+  QSlider* contrastSlider = nullptr;
+  QSlider* blurSlider = nullptr;
   cv::Mat baseImage;
+  QWidget* blurControlWidget = nullptr;
+  QWidget* brightcontrastControlWidget = nullptr;
 };
 
 #endif

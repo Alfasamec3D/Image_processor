@@ -9,8 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "testgrayscale_autogen/timestamp" "custom" "testgrayscale_autogen/deps"
-  "/home/alfasamec3d/media/programs/Image_processor/build/testgrayscale_autogen/mocs_compilation.cpp" "CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o.d"
-  "/home/alfasamec3d/media/programs/Image_processor/tests/testGrayscale.cpp" "CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o" "gcc" "CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o.d"
+  "/mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscale_autogen/mocs_compilation.cpp" "CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o.d"
+  "/mnt/9C468886468862BE/media/programs/Image_processor/tests/testGrayscale.cpp" "CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o" "gcc" "CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

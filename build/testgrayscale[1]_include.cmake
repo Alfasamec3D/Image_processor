@@ -1,5 +1,5 @@
-if(EXISTS "/home/alfasamec3d/media/programs/Image_processor/build/testgrayscale[1]_tests.cmake")
-  include("/home/alfasamec3d/media/programs/Image_processor/build/testgrayscale[1]_tests.cmake")
+if(EXISTS "/mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscale[1]_tests.cmake")
+  include("/mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscale[1]_tests.cmake")
 else()
   add_test(testgrayscale_NOT_BUILT testgrayscale_NOT_BUILT)
 endif()

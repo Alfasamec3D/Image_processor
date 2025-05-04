@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alfasamec3d/media/programs/Image_processor
+CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/Image_processor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alfasamec3d/media/programs/Image_processor/build
+CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/testgrayscalesection.dir/depend.make
@@ -72,37 +72,37 @@ include CMakeFiles/testgrayscalesection.dir/flags.make
 testgrayscalesection_autogen/timestamp: /usr/lib/qt5/bin/moc
 testgrayscalesection_autogen/timestamp: /usr/lib/qt5/bin/uic
 testgrayscalesection_autogen/timestamp: CMakeFiles/testgrayscalesection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target testgrayscalesection"
-	/usr/bin/cmake -E cmake_autogen /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/testgrayscalesection_autogen.dir/AutogenInfo.json Release
-	/usr/bin/cmake -E touch /home/alfasamec3d/media/programs/Image_processor/build/testgrayscalesection_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target testgrayscalesection"
+	/usr/bin/cmake -E cmake_autogen /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/testgrayscalesection_autogen.dir/AutogenInfo.json Release
+	/usr/bin/cmake -E touch /mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscalesection_autogen/timestamp
 
 CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.o: CMakeFiles/testgrayscalesection.dir/flags.make
 CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.o: testgrayscalesection_autogen/mocs_compilation.cpp
 CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.o: CMakeFiles/testgrayscalesection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.o -MF CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.o -c /home/alfasamec3d/media/programs/Image_processor/build/testgrayscalesection_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.o -MF CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.o -c /mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscalesection_autogen/mocs_compilation.cpp
 
 CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alfasamec3d/media/programs/Image_processor/build/testgrayscalesection_autogen/mocs_compilation.cpp > CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscalesection_autogen/mocs_compilation.cpp > CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alfasamec3d/media/programs/Image_processor/build/testgrayscalesection_autogen/mocs_compilation.cpp -o CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscalesection_autogen/mocs_compilation.cpp -o CMakeFiles/testgrayscalesection.dir/testgrayscalesection_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.o: CMakeFiles/testgrayscalesection.dir/flags.make
-CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.o: /home/alfasamec3d/media/programs/Image_processor/tests/testGrayscaleSection.cpp
+CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.o: /mnt/9C468886468862BE/media/programs/Image_processor/tests/testGrayscaleSection.cpp
 CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.o: CMakeFiles/testgrayscalesection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.o -MF CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.o.d -o CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.o -c /home/alfasamec3d/media/programs/Image_processor/tests/testGrayscaleSection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.o -MF CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.o.d -o CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.o -c /mnt/9C468886468862BE/media/programs/Image_processor/tests/testGrayscaleSection.cpp
 
 CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alfasamec3d/media/programs/Image_processor/tests/testGrayscaleSection.cpp > CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/9C468886468862BE/media/programs/Image_processor/tests/testGrayscaleSection.cpp > CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.i
 
 CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alfasamec3d/media/programs/Image_processor/tests/testGrayscaleSection.cpp -o CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/9C468886468862BE/media/programs/Image_processor/tests/testGrayscaleSection.cpp -o CMakeFiles/testgrayscalesection.dir/tests/testGrayscaleSection.cpp.s
 
 # Object files for target testgrayscalesection
 testgrayscalesection_OBJECTS = \
@@ -174,9 +174,9 @@ testgrayscalesection: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.6.0
 testgrayscalesection: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0
 testgrayscalesection: lib/libgtest.a
 testgrayscalesection: CMakeFiles/testgrayscalesection.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable testgrayscalesection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable testgrayscalesection"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testgrayscalesection.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/cmake -D TEST_TARGET=testgrayscalesection -D TEST_EXECUTABLE=/home/alfasamec3d/media/programs/Image_processor/build/testgrayscalesection -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/alfasamec3d/media/programs/Image_processor/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=testgrayscalesection_TESTS -D CTEST_FILE=/home/alfasamec3d/media/programs/Image_processor/build/testgrayscalesection[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
+	/usr/bin/cmake -D TEST_TARGET=testgrayscalesection -D TEST_EXECUTABLE=/mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscalesection -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/mnt/9C468886468862BE/media/programs/Image_processor/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=testgrayscalesection_TESTS -D CTEST_FILE=/mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscalesection[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
 
 # Rule to build all files generated by this target.
 CMakeFiles/testgrayscalesection.dir/build: testgrayscalesection
@@ -187,6 +187,6 @@ CMakeFiles/testgrayscalesection.dir/clean:
 .PHONY : CMakeFiles/testgrayscalesection.dir/clean
 
 CMakeFiles/testgrayscalesection.dir/depend: testgrayscalesection_autogen/timestamp
-	cd /home/alfasamec3d/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/testgrayscalesection.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/9C468886468862BE/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/testgrayscalesection.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/testgrayscalesection.dir/depend
 

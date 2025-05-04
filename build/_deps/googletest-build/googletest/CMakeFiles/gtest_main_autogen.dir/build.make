@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alfasamec3d/media/programs/Image_processor
+CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/Image_processor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alfasamec3d/media/programs/Image_processor/build
+CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
 
 # Utility rule file for gtest_main_autogen.
 
@@ -71,9 +71,9 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen: _deps/googletes
 _deps/googletest-build/googletest/gtest_main_autogen/timestamp: /usr/lib/qt5/bin/moc
 _deps/googletest-build/googletest/gtest_main_autogen/timestamp: /usr/lib/qt5/bin/uic
 _deps/googletest-build/googletest/gtest_main_autogen/timestamp: _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target gtest_main"
-	cd /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-build/googletest && /usr/bin/cmake -E cmake_autogen /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/AutogenInfo.json Release
-	cd /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-build/googletest && /usr/bin/cmake -E touch /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-build/googletest/gtest_main_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target gtest_main"
+	cd /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-build/googletest && /usr/bin/cmake -E cmake_autogen /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/AutogenInfo.json Release
+	cd /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-build/googletest && /usr/bin/cmake -E touch /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-build/googletest/gtest_main_autogen/timestamp
 
 gtest_main_autogen: _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen
 gtest_main_autogen: _deps/googletest-build/googletest/gtest_main_autogen/timestamp
@@ -85,10 +85,10 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/build: gtest
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/build
 
 _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/clean:
-	cd /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-build/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main_autogen.dir/cmake_clean.cmake
+	cd /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-build/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main_autogen.dir/cmake_clean.cmake
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/clean
 
 _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/depend:
-	cd /home/alfasamec3d/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-build/googletest /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/9C468886468862BE/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-src/googletest /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-build/googletest /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/depend
 

@@ -1,9 +1,9 @@
 testblursection_autogen/timestamp: \
-	/home/alfasamec3d/media/programs/Image_processor/CMakeLists.txt \
-	/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeCCompiler.cmake \
-	/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
-	/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
-	/home/alfasamec3d/media/programs/Image_processor/tests/testBlurSection.cpp \
+	/mnt/9C468886468862BE/media/programs/Image_processor/CMakeLists.txt \
+	/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeCCompiler.cmake \
+	/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
+	/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
+	/mnt/9C468886468862BE/media/programs/Image_processor/tests/testBlurSection.cpp \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake \

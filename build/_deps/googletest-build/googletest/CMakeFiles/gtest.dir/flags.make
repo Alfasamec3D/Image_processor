@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-build/googletest/gtest_autogen/include -I/usr/include/opencv4 -I/home/alfasamec3d/media/programs/Image_processor/include -I/home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest/include -I/home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-build/googletest/gtest_autogen/include -I/usr/include/opencv4 -I/mnt/9C468886468862BE/media/programs/Image_processor/include -I/mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-src/googletest/include -I/mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-src/googletest
 
 CXX_FLAGS = -O3 -DNDEBUG -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
 

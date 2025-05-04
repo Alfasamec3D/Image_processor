@@ -1,17 +1,17 @@
 {
-	"BUILD_DIR" : "/home/alfasamec3d/media/programs/Image_processor/build/image_proc_autogen",
-	"CMAKE_BINARY_DIR" : "/home/alfasamec3d/media/programs/Image_processor/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/alfasamec3d/media/programs/Image_processor/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/alfasamec3d/media/programs/Image_processor",
+	"BUILD_DIR" : "/mnt/9C468886468862BE/media/programs/Image_processor/build/image_proc_autogen",
+	"CMAKE_BINARY_DIR" : "/mnt/9C468886468862BE/media/programs/Image_processor/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/mnt/9C468886468862BE/media/programs/Image_processor/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/mnt/9C468886468862BE/media/programs/Image_processor",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/alfasamec3d/media/programs/Image_processor/CMakeLists.txt",
-		"/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeSystem.cmake",
+		"/mnt/9C468886468862BE/media/programs/Image_processor/CMakeLists.txt",
+		"/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeSystem.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake",
-		"/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeCCompiler.cmake",
-		"/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake",
+		"/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeCCompiler.cmake",
+		"/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake",
@@ -86,13 +86,13 @@
 		"/usr/share/cmake-3.28/Modules/FetchContent/CMakeLists.cmake.in",
 		"/usr/share/cmake-3.28/Modules/GoogleTest.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/alfasamec3d/media/programs/Image_processor",
-	"DEP_FILE" : "/home/alfasamec3d/media/programs/Image_processor/build/image_proc_autogen/deps",
+	"CMAKE_SOURCE_DIR" : "/mnt/9C468886468862BE/media/programs/Image_processor",
+	"DEP_FILE" : "/mnt/9C468886468862BE/media/programs/Image_processor/build/image_proc_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "image_proc_autogen/timestamp",
 	"HEADERS" : [],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/alfasamec3d/media/programs/Image_processor/build/image_proc_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/alfasamec3d/media/programs/Image_processor/build/image_proc_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/mnt/9C468886468862BE/media/programs/Image_processor/build/image_proc_autogen/include",
+	"MOC_COMPILATION_FILE" : "/mnt/9C468886468862BE/media/programs/Image_processor/build/image_proc_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -103,7 +103,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/alfasamec3d/media/programs/Image_processor/include",
+		"/mnt/9C468886468862BE/media/programs/Image_processor/include",
 		"/usr/include/opencv4",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
@@ -129,21 +129,21 @@
 		"-c",
 		"/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/alfasamec3d/media/programs/Image_processor/build/image_proc_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/mnt/9C468886468862BE/media/programs/Image_processor/build/image_proc_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 14,
-	"PARSE_CACHE_FILE" : "/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/image_proc_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/image_proc_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 15,
-	"SETTINGS_FILE" : "/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/image_proc_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/image_proc_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/home/alfasamec3d/media/programs/Image_processor/image_proc.cpp",
+			"/mnt/9C468886468862BE/media/programs/Image_processor/image_proc.cpp",
 			"MU",
 			null
 		]

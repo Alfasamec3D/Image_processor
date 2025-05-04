@@ -1,7 +1,7 @@
 CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o: \
- /home/alfasamec3d/media/programs/Image_processor/build/gui_autogen/mocs_compilation.cpp \
+ /mnt/9C468886468862BE/media/programs/Image_processor/build/gui_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/alfasamec3d/media/programs/Image_processor/build/gui_autogen/6YEA5652QU/moc_gui.cpp \
+ /mnt/9C468886468862BE/media/programs/Image_processor/build/gui_autogen/6YEA5652QU/moc_gui.cpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -118,7 +118,7 @@ CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/alfasamec3d/media/programs/Image_processor/build/gui_autogen/6YEA5652QU/../../../include/gui.hpp \
+ /mnt/9C468886468862BE/media/programs/Image_processor/build/gui_autogen/6YEA5652QU/../../../include/gui.hpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -305,7 +305,7 @@ CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSlider \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
- /home/alfasamec3d/media/programs/Image_processor/build/gui_autogen/6YEA5652QU/../../../include/proc.hpp \
+ /mnt/9C468886468862BE/media/programs/Image_processor/build/gui_autogen/6YEA5652QU/../../../include/proc.hpp \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \

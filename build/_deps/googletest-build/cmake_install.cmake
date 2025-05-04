@@ -1,4 +1,4 @@
-# Install script for directory: /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src
+# Install script for directory: /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,6 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-build/googlemock/cmake_install.cmake")
+  include("/mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-build/googlemock/cmake_install.cmake")
 endif()
 

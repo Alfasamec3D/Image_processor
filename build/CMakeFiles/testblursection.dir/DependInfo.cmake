@@ -9,8 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "testblursection_autogen/timestamp" "custom" "testblursection_autogen/deps"
-  "/home/alfasamec3d/media/programs/Image_processor/build/testblursection_autogen/mocs_compilation.cpp" "CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o.d"
-  "/home/alfasamec3d/media/programs/Image_processor/tests/testBlurSection.cpp" "CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o" "gcc" "CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o.d"
+  "/mnt/9C468886468862BE/media/programs/Image_processor/build/testblursection_autogen/mocs_compilation.cpp" "CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o.d"
+  "/mnt/9C468886468862BE/media/programs/Image_processor/tests/testBlurSection.cpp" "CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o" "gcc" "CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

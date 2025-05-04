@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alfasamec3d/media/programs/Image_processor
+CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/Image_processor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alfasamec3d/media/programs/Image_processor/build
+CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/testgrayscale.dir/depend.make
@@ -72,37 +72,37 @@ include CMakeFiles/testgrayscale.dir/flags.make
 testgrayscale_autogen/timestamp: /usr/lib/qt5/bin/moc
 testgrayscale_autogen/timestamp: /usr/lib/qt5/bin/uic
 testgrayscale_autogen/timestamp: CMakeFiles/testgrayscale.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target testgrayscale"
-	/usr/bin/cmake -E cmake_autogen /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/testgrayscale_autogen.dir/AutogenInfo.json Release
-	/usr/bin/cmake -E touch /home/alfasamec3d/media/programs/Image_processor/build/testgrayscale_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target testgrayscale"
+	/usr/bin/cmake -E cmake_autogen /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/testgrayscale_autogen.dir/AutogenInfo.json Release
+	/usr/bin/cmake -E touch /mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscale_autogen/timestamp
 
 CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o: CMakeFiles/testgrayscale.dir/flags.make
 CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o: testgrayscale_autogen/mocs_compilation.cpp
 CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o: CMakeFiles/testgrayscale.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o -MF CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o -c /home/alfasamec3d/media/programs/Image_processor/build/testgrayscale_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o -MF CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.o -c /mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscale_autogen/mocs_compilation.cpp
 
 CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alfasamec3d/media/programs/Image_processor/build/testgrayscale_autogen/mocs_compilation.cpp > CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscale_autogen/mocs_compilation.cpp > CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alfasamec3d/media/programs/Image_processor/build/testgrayscale_autogen/mocs_compilation.cpp -o CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscale_autogen/mocs_compilation.cpp -o CMakeFiles/testgrayscale.dir/testgrayscale_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o: CMakeFiles/testgrayscale.dir/flags.make
-CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o: /home/alfasamec3d/media/programs/Image_processor/tests/testGrayscale.cpp
+CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o: /mnt/9C468886468862BE/media/programs/Image_processor/tests/testGrayscale.cpp
 CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o: CMakeFiles/testgrayscale.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o -MF CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o.d -o CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o -c /home/alfasamec3d/media/programs/Image_processor/tests/testGrayscale.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o -MF CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o.d -o CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.o -c /mnt/9C468886468862BE/media/programs/Image_processor/tests/testGrayscale.cpp
 
 CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alfasamec3d/media/programs/Image_processor/tests/testGrayscale.cpp > CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/9C468886468862BE/media/programs/Image_processor/tests/testGrayscale.cpp > CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.i
 
 CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alfasamec3d/media/programs/Image_processor/tests/testGrayscale.cpp -o CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/9C468886468862BE/media/programs/Image_processor/tests/testGrayscale.cpp -o CMakeFiles/testgrayscale.dir/tests/testGrayscale.cpp.s
 
 # Object files for target testgrayscale
 testgrayscale_OBJECTS = \
@@ -174,9 +174,9 @@ testgrayscale: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.6.0
 testgrayscale: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0
 testgrayscale: lib/libgtest.a
 testgrayscale: CMakeFiles/testgrayscale.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable testgrayscale"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable testgrayscale"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testgrayscale.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/cmake -D TEST_TARGET=testgrayscale -D TEST_EXECUTABLE=/home/alfasamec3d/media/programs/Image_processor/build/testgrayscale -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/alfasamec3d/media/programs/Image_processor/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=testgrayscale_TESTS -D CTEST_FILE=/home/alfasamec3d/media/programs/Image_processor/build/testgrayscale[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
+	/usr/bin/cmake -D TEST_TARGET=testgrayscale -D TEST_EXECUTABLE=/mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscale -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/mnt/9C468886468862BE/media/programs/Image_processor/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=testgrayscale_TESTS -D CTEST_FILE=/mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscale[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
 
 # Rule to build all files generated by this target.
 CMakeFiles/testgrayscale.dir/build: testgrayscale
@@ -187,6 +187,6 @@ CMakeFiles/testgrayscale.dir/clean:
 .PHONY : CMakeFiles/testgrayscale.dir/clean
 
 CMakeFiles/testgrayscale.dir/depend: testgrayscale_autogen/timestamp
-	cd /home/alfasamec3d/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/testgrayscale.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/9C468886468862BE/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/testgrayscale.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/testgrayscale.dir/depend
 

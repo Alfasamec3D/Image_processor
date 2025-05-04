@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainAppWindow_t {
-    QByteArrayData data[13];
-    char stringdata0[137];
+    QByteArrayData data[11];
+    char stringdata0[132];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -40,17 +40,15 @@ QT_MOC_LITERAL(4, 40, 9), // "saveImage"
 QT_MOC_LITERAL(5, 50, 14), // "showBlurSlider"
 QT_MOC_LITERAL(6, 65, 11), // "rotateImage"
 QT_MOC_LITERAL(7, 77, 10), // "rotateCode"
-QT_MOC_LITERAL(8, 88, 25), // "brightness_contrast_Image"
-QT_MOC_LITERAL(9, 114, 1), // "a"
-QT_MOC_LITERAL(10, 116, 1), // "b"
-QT_MOC_LITERAL(11, 118, 9), // "flipImage"
-QT_MOC_LITERAL(12, 128, 8) // "flipCode"
+QT_MOC_LITERAL(8, 88, 24), // "showBrightContrastSlider"
+QT_MOC_LITERAL(9, 113, 9), // "flipImage"
+QT_MOC_LITERAL(10, 123, 8) // "flipCode"
 
     },
     "MainAppWindow\0loadImage\0\0applyGrayscale\0"
     "saveImage\0showBlurSlider\0rotateImage\0"
-    "rotateCode\0brightness_contrast_Image\0"
-    "a\0b\0flipImage\0flipCode"
+    "rotateCode\0showBrightContrastSlider\0"
+    "flipImage\0flipCode"
 };
 #undef QT_MOC_LITERAL
 
@@ -73,8 +71,8 @@ static const uint qt_meta_data_MainAppWindow[] = {
        4,    0,   51,    2, 0x08 /* Private */,
        5,    0,   52,    2, 0x08 /* Private */,
        6,    1,   53,    2, 0x08 /* Private */,
-       8,    2,   56,    2, 0x08 /* Private */,
-      11,    1,   61,    2, 0x08 /* Private */,
+       8,    0,   56,    2, 0x08 /* Private */,
+       9,    1,   57,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -82,8 +80,8 @@ static const uint qt_meta_data_MainAppWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int,    7,
-    QMetaType::Void, QMetaType::Int, QMetaType::Int,    9,   10,
-    QMetaType::Void, QMetaType::Int,   12,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,   10,
 
        0        // eod
 };
@@ -99,7 +97,7 @@ void MainAppWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 2: _t->saveImage(); break;
         case 3: _t->showBlurSlider(); break;
         case 4: _t->rotateImage((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 5: _t->brightness_contrast_Image((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 5: _t->showBrightContrastSlider(); break;
         case 6: _t->flipImage((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;
         }

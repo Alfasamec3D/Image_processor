@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alfasamec3d/media/programs/Image_processor
+CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/Image_processor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alfasamec3d/media/programs/Image_processor/build
+CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/testblursection.dir/depend.make
@@ -72,37 +72,37 @@ include CMakeFiles/testblursection.dir/flags.make
 testblursection_autogen/timestamp: /usr/lib/qt5/bin/moc
 testblursection_autogen/timestamp: /usr/lib/qt5/bin/uic
 testblursection_autogen/timestamp: CMakeFiles/testblursection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target testblursection"
-	/usr/bin/cmake -E cmake_autogen /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/testblursection_autogen.dir/AutogenInfo.json Release
-	/usr/bin/cmake -E touch /home/alfasamec3d/media/programs/Image_processor/build/testblursection_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target testblursection"
+	/usr/bin/cmake -E cmake_autogen /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/testblursection_autogen.dir/AutogenInfo.json Release
+	/usr/bin/cmake -E touch /mnt/9C468886468862BE/media/programs/Image_processor/build/testblursection_autogen/timestamp
 
 CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o: CMakeFiles/testblursection.dir/flags.make
 CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o: testblursection_autogen/mocs_compilation.cpp
 CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o: CMakeFiles/testblursection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o -MF CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o -c /home/alfasamec3d/media/programs/Image_processor/build/testblursection_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o -MF CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.o -c /mnt/9C468886468862BE/media/programs/Image_processor/build/testblursection_autogen/mocs_compilation.cpp
 
 CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alfasamec3d/media/programs/Image_processor/build/testblursection_autogen/mocs_compilation.cpp > CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/9C468886468862BE/media/programs/Image_processor/build/testblursection_autogen/mocs_compilation.cpp > CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alfasamec3d/media/programs/Image_processor/build/testblursection_autogen/mocs_compilation.cpp -o CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/9C468886468862BE/media/programs/Image_processor/build/testblursection_autogen/mocs_compilation.cpp -o CMakeFiles/testblursection.dir/testblursection_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o: CMakeFiles/testblursection.dir/flags.make
-CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o: /home/alfasamec3d/media/programs/Image_processor/tests/testBlurSection.cpp
+CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o: /mnt/9C468886468862BE/media/programs/Image_processor/tests/testBlurSection.cpp
 CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o: CMakeFiles/testblursection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o -MF CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o.d -o CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o -c /home/alfasamec3d/media/programs/Image_processor/tests/testBlurSection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o -MF CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o.d -o CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.o -c /mnt/9C468886468862BE/media/programs/Image_processor/tests/testBlurSection.cpp
 
 CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alfasamec3d/media/programs/Image_processor/tests/testBlurSection.cpp > CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/9C468886468862BE/media/programs/Image_processor/tests/testBlurSection.cpp > CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.i
 
 CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alfasamec3d/media/programs/Image_processor/tests/testBlurSection.cpp -o CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/9C468886468862BE/media/programs/Image_processor/tests/testBlurSection.cpp -o CMakeFiles/testblursection.dir/tests/testBlurSection.cpp.s
 
 # Object files for target testblursection
 testblursection_OBJECTS = \
@@ -174,9 +174,9 @@ testblursection: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.6.0
 testblursection: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0
 testblursection: lib/libgtest.a
 testblursection: CMakeFiles/testblursection.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable testblursection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable testblursection"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testblursection.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/cmake -D TEST_TARGET=testblursection -D TEST_EXECUTABLE=/home/alfasamec3d/media/programs/Image_processor/build/testblursection -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/alfasamec3d/media/programs/Image_processor/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=testblursection_TESTS -D CTEST_FILE=/home/alfasamec3d/media/programs/Image_processor/build/testblursection[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
+	/usr/bin/cmake -D TEST_TARGET=testblursection -D TEST_EXECUTABLE=/mnt/9C468886468862BE/media/programs/Image_processor/build/testblursection -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/mnt/9C468886468862BE/media/programs/Image_processor/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=testblursection_TESTS -D CTEST_FILE=/mnt/9C468886468862BE/media/programs/Image_processor/build/testblursection[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
 
 # Rule to build all files generated by this target.
 CMakeFiles/testblursection.dir/build: testblursection
@@ -187,6 +187,6 @@ CMakeFiles/testblursection.dir/clean:
 .PHONY : CMakeFiles/testblursection.dir/clean
 
 CMakeFiles/testblursection.dir/depend: testblursection_autogen/timestamp
-	cd /home/alfasamec3d/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/testblursection.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/9C468886468862BE/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/testblursection.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/testblursection.dir/depend
 

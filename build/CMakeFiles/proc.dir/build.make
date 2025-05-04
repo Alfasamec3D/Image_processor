@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alfasamec3d/media/programs/Image_processor
+CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/Image_processor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alfasamec3d/media/programs/Image_processor/build
+CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/proc.dir/depend.make
@@ -72,37 +72,37 @@ include CMakeFiles/proc.dir/flags.make
 proc_autogen/timestamp: /usr/lib/qt5/bin/moc
 proc_autogen/timestamp: /usr/lib/qt5/bin/uic
 proc_autogen/timestamp: CMakeFiles/proc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target proc"
-	/usr/bin/cmake -E cmake_autogen /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/proc_autogen.dir/AutogenInfo.json Release
-	/usr/bin/cmake -E touch /home/alfasamec3d/media/programs/Image_processor/build/proc_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target proc"
+	/usr/bin/cmake -E cmake_autogen /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/proc_autogen.dir/AutogenInfo.json Release
+	/usr/bin/cmake -E touch /mnt/9C468886468862BE/media/programs/Image_processor/build/proc_autogen/timestamp
 
 CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o: CMakeFiles/proc.dir/flags.make
 CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o: proc_autogen/mocs_compilation.cpp
 CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o: CMakeFiles/proc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o -MF CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o -c /home/alfasamec3d/media/programs/Image_processor/build/proc_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o -MF CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o -c /mnt/9C468886468862BE/media/programs/Image_processor/build/proc_autogen/mocs_compilation.cpp
 
 CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alfasamec3d/media/programs/Image_processor/build/proc_autogen/mocs_compilation.cpp > CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/9C468886468862BE/media/programs/Image_processor/build/proc_autogen/mocs_compilation.cpp > CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alfasamec3d/media/programs/Image_processor/build/proc_autogen/mocs_compilation.cpp -o CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/9C468886468862BE/media/programs/Image_processor/build/proc_autogen/mocs_compilation.cpp -o CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/proc.dir/src/proc.cpp.o: CMakeFiles/proc.dir/flags.make
-CMakeFiles/proc.dir/src/proc.cpp.o: /home/alfasamec3d/media/programs/Image_processor/src/proc.cpp
+CMakeFiles/proc.dir/src/proc.cpp.o: /mnt/9C468886468862BE/media/programs/Image_processor/src/proc.cpp
 CMakeFiles/proc.dir/src/proc.cpp.o: CMakeFiles/proc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/proc.dir/src/proc.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proc.dir/src/proc.cpp.o -MF CMakeFiles/proc.dir/src/proc.cpp.o.d -o CMakeFiles/proc.dir/src/proc.cpp.o -c /home/alfasamec3d/media/programs/Image_processor/src/proc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/proc.dir/src/proc.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proc.dir/src/proc.cpp.o -MF CMakeFiles/proc.dir/src/proc.cpp.o.d -o CMakeFiles/proc.dir/src/proc.cpp.o -c /mnt/9C468886468862BE/media/programs/Image_processor/src/proc.cpp
 
 CMakeFiles/proc.dir/src/proc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proc.dir/src/proc.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alfasamec3d/media/programs/Image_processor/src/proc.cpp > CMakeFiles/proc.dir/src/proc.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/9C468886468862BE/media/programs/Image_processor/src/proc.cpp > CMakeFiles/proc.dir/src/proc.cpp.i
 
 CMakeFiles/proc.dir/src/proc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proc.dir/src/proc.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alfasamec3d/media/programs/Image_processor/src/proc.cpp -o CMakeFiles/proc.dir/src/proc.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/9C468886468862BE/media/programs/Image_processor/src/proc.cpp -o CMakeFiles/proc.dir/src/proc.cpp.s
 
 # Object files for target proc
 proc_OBJECTS = \
@@ -116,7 +116,7 @@ libproc.a: CMakeFiles/proc.dir/proc_autogen/mocs_compilation.cpp.o
 libproc.a: CMakeFiles/proc.dir/src/proc.cpp.o
 libproc.a: CMakeFiles/proc.dir/build.make
 libproc.a: CMakeFiles/proc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libproc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libproc.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/proc.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proc.dir/link.txt --verbose=$(VERBOSE)
 
@@ -129,6 +129,6 @@ CMakeFiles/proc.dir/clean:
 .PHONY : CMakeFiles/proc.dir/clean
 
 CMakeFiles/proc.dir/depend: proc_autogen/timestamp
-	cd /home/alfasamec3d/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/proc.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/9C468886468862BE/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/proc.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/proc.dir/depend
 

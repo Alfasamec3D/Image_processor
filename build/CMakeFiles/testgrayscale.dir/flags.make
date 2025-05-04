@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/alfasamec3d/media/programs/Image_processor/build/testgrayscale_autogen/include -I/home/alfasamec3d/media/programs/Image_processor/include -isystem /usr/include/opencv4 -isystem /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest/include -isystem /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/mnt/9C468886468862BE/media/programs/Image_processor/build/testgrayscale_autogen/include -I/mnt/9C468886468862BE/media/programs/Image_processor/include -isystem /usr/include/opencv4 -isystem /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-src/googletest/include -isystem /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-src/googletest
 
 CXX_FLAGS = -O3 -DNDEBUG
 

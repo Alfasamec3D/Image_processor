@@ -1,8 +1,11 @@
 #include "gui.hpp"
+
 #include <QAction>
 #include <QApplication>
 #include <QDebug>
 #include <QFileDialog>
+#include <QIntValidator>
+#include <QLineEdit>
 #include <QMenu>
 #include <QMessageBox>
 #include <QToolBar>
@@ -27,10 +30,11 @@ MainAppWindow::MainAppWindow() {
   toolbar->setFloatable(false);
 
   // Creating actions
-  QAction* loadAction = new QAction("Load File", this);
+  QAction* loadAction = new QAction("Open...", this);
   QAction* grayscaleAction = new QAction("Grayscale", this);
-  QAction* saveAction = new QAction("Save File", this);
+  QAction* saveAction = new QAction("Save As...", this);
   QAction* blurAction = new QAction("Gaussian Blur", this);
+  QAction* brightcontrastAction = new QAction("Brightness/Contrast");
   QAction* rotate_clockwiseAction = new QAction("Rotate  90° clockwise", this);
   QAction* rotate_counterclockwiseAction =
       new QAction("Rotate  90° counterclockwise", this);
@@ -64,6 +68,7 @@ MainAppWindow::MainAppWindow() {
   toolbar->addWidget(positionButton);
   toolbar->addAction(grayscaleAction);
   toolbar->addAction(blurAction);
+  toolbar->addAction(brightcontrastAction);
 
   // Connecting buttons and actions
   connect(loadAction, &QAction::triggered, this, &MainAppWindow::loadImage);
@@ -72,7 +77,8 @@ MainAppWindow::MainAppWindow() {
   connect(saveAction, &QAction::triggered, this, &MainAppWindow::saveImage);
   connect(blurAction, &QAction::triggered, this,
           &MainAppWindow::showBlurSlider);
-
+  connect(brightcontrastAction, &QAction::triggered, this,
+          &MainAppWindow::showBrightContrastSlider);
   connect(rotate_clockwiseAction, &QAction::triggered, this,
           [this]() { rotateImage(cv::ROTATE_90_CLOCKWISE); });
   connect(rotate_counterclockwiseAction, &QAction::triggered, this,
@@ -151,41 +157,153 @@ void MainAppWindow::flipImage(int flipCode) {
                                     Qt::SmoothTransformation));
 }
 
-void MainAppWindow::brightness_contrast_Image(int a, int b) {
-  QPixmap currentPixmap = imageLabel->pixmap(Qt::ReturnByValue);
-  if (currentPixmap.isNull()) return;
+void MainAppWindow::showBrightContrastSlider() {
+  if (!brightcontrastControlWidget) {
+    brightcontrastControlWidget = new QFrame(this, Qt::Popup);
+    QVBoxLayout* layout = new QVBoxLayout(brightcontrastControlWidget);
+    QLabel* labelBr = new QLabel("Brightness:", brightcontrastControlWidget);
+    QLabel* labelCr = new QLabel("Contrast:", brightcontrastControlWidget);
+    brightSlider = new QSlider(Qt::Horizontal, brightcontrastControlWidget);
+    contrastSlider=new QSlider(Qt::Horizontal, brightcontrastControlWidget);
+    QLineEdit* brightLineEdit = new QLineEdit("5", brightcontrastControlWidget);
+    QLineEdit* contrastLineEdit = new QLineEdit("5", brightcontrastControlWidget);
 
-  // Apply grayscale
-  cv::Mat input = currentProcessedImage.clone();
+    brightLineEdit->setFixedWidth(40);
+    brightLineEdit->setValidator(new QIntValidator(-49, 49, brightLineEdit));
+    contrastLineEdit->setFixedWidth(40);
+    contrastLineEdit->setValidator(new QIntValidator(1, 49, brightLineEdit));
 
-  brightness_contrast(input, currentProcessedImage, a, b);
+    brightSlider->setRange(-49, 49);
+    brightSlider->setValue(5);
+    contrastSlider->setRange(1, 49);
+    contrastSlider->setValue(5);
 
-  // Ensure deep copy
-  imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
-                            .scaled(imageLabel->size(), Qt::KeepAspectRatio,
-                                    Qt::SmoothTransformation));
+    QHBoxLayout* BrsliderLayout = new QHBoxLayout();
+    QHBoxLayout* CrsliderLayout = new QHBoxLayout();
+    BrsliderLayout->addWidget(brightSlider);
+    BrsliderLayout->addWidget(brightLineEdit);
+    CrsliderLayout->addWidget(contrastSlider);
+    CrsliderLayout->addWidget(contrastLineEdit);
+
+    layout->addWidget(labelBr);
+    layout->addLayout(BrsliderLayout);
+    layout->addWidget(labelCr);
+    layout->addLayout(CrsliderLayout);
+
+    connect(brightSlider, &QSlider::valueChanged, this,
+            [this, brightLineEdit](int value) {
+              brightLineEdit->setText(QString::number(value));
+              if (baseImage.empty()) {
+                qDebug() << "Base image is empty! Cannot apply brightness.";
+                return;
+              }
+
+              cv::Mat output(baseImage.size(), baseImage.type());
+              brightness_contrast(baseImage, output, 1, value);
+              currentProcessedImage = output;
+              imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
+                                        .scaled(imageLabel->size(),
+                                                Qt::KeepAspectRatio,
+                                                Qt::SmoothTransformation));
+            });
+
+            connect(contrastSlider, &QSlider::valueChanged, this,
+              [this, contrastLineEdit](int value) {
+                contrastLineEdit->setText(QString::number(value));
+                if (baseImage.empty()) {
+                  qDebug() << "Base image is empty! Cannot apply contrast.";
+                  return;
+                }
+  
+                cv::Mat output(baseImage.size(), baseImage.type());
+                brightness_contrast(baseImage, output, value, 0);
+                currentProcessedImage = output;
+                imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
+                                          .scaled(imageLabel->size(),
+                                                  Qt::KeepAspectRatio,
+                                                  Qt::SmoothTransformation));
+              });
+
+    connect(brightLineEdit, &QLineEdit::editingFinished, this,
+            [this, brightLineEdit]() {
+              bool ok;
+              int value = brightLineEdit->text().toInt(&ok);
+              if (!ok) return;
+
+              value = std::clamp(value, -49, 49);
+              brightSlider->setValue(value);
+            });
+            connect(contrastLineEdit, &QLineEdit::editingFinished, this,
+              [this, contrastLineEdit]() {
+                bool ok;
+                int value = contrastLineEdit->text().toInt(&ok);
+                if (!ok) return;
+  
+                value = std::clamp(value, -49, 49);
+                contrastSlider->setValue(value);
+              });
+
+            connect(brightcontrastControlWidget, &QWidget::destroyed, this, [this]() {
+              brightcontrastControlWidget = nullptr;
+              brightSlider = nullptr;
+            });
+  }
+  brightcontrastControlWidget->setGeometry(10, 40, 250, 80);
+  brightcontrastControlWidget->show();
 }
 
-
 void MainAppWindow::showBlurSlider() {
-  if (!blurSlider) {
-    blurSlider = new QSlider(Qt::Horizontal, this);
-    blurSlider->setRange(1, 49);
-    blurSlider->setValue(5);
-    blurSlider->setGeometry(10, 40, 200, 30);
-    blurSlider->show();
-    connect(blurSlider, &QSlider::valueChanged, this, [this](int value) {
-      if (baseImage.empty()) {
-        qDebug() << "Base image is empty! Cannot apply blur.";
-      }
-      if (value % 2 == 0) ++value;
+  if (!blurControlWidget) {
+    blurControlWidget = new QFrame(this, Qt::Popup);
+    QVBoxLayout* mainLayout = new QVBoxLayout(blurControlWidget);
+    QLabel* label = new QLabel("Blur Depth:", blurControlWidget);
+    blurSlider = new QSlider(Qt::Horizontal, blurControlWidget);
+    QLineEdit* blurLineEdit = new QLineEdit("5", blurControlWidget);
 
-      cv::Mat output(baseImage.size(), baseImage.type());
-      imageblur(baseImage, output, value);
-      currentProcessedImage = output;
-      imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
-                                .scaled(imageLabel->size(), Qt::KeepAspectRatio,
-                                        Qt::SmoothTransformation));
+    blurLineEdit->setFixedWidth(40);
+    blurLineEdit->setValidator(new QIntValidator(0, 49, blurLineEdit));
+
+    blurSlider->setRange(0, 49);
+    blurSlider->setValue(5);
+
+    QHBoxLayout* sliderLayout = new QHBoxLayout();
+    sliderLayout->addWidget(blurSlider);
+    sliderLayout->addWidget(blurLineEdit);
+
+    mainLayout->addWidget(label);
+    mainLayout->addLayout(sliderLayout);
+
+    connect(blurSlider, &QSlider::valueChanged, this,
+            [this, blurLineEdit](int value) {
+              blurLineEdit->setText(QString::number(value));
+              if (baseImage.empty()) {
+                qDebug() << "Base image is empty! Cannot apply blur.";
+                return;
+              }
+
+              cv::Mat output(baseImage.size(), baseImage.type());
+              imageblur(baseImage, output, value * 2 + 1);
+              currentProcessedImage = output;
+              imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
+                                        .scaled(imageLabel->size(),
+                                                Qt::KeepAspectRatio,
+                                                Qt::SmoothTransformation));
+            });
+
+    connect(blurLineEdit, &QLineEdit::editingFinished, this,
+            [this, blurLineEdit]() {
+              bool ok;
+              int value = blurLineEdit->text().toInt(&ok);
+              if (!ok) return;
+
+              value = std::clamp(value, 0, 49);
+              blurSlider->setValue(value);
+            });
+    connect(blurControlWidget, &QWidget::destroyed, this, [this]() {
+      blurControlWidget = nullptr;
+      blurSlider = nullptr;
     });
   }
+  blurControlWidget->setGeometry(10, 40, 250, 80);
+  blurControlWidget->show();
 }

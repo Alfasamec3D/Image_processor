@@ -1,7 +1,7 @@
 CMakeFiles/proc.dir/src/proc.cpp.o: \
- /home/alfasamec3d/media/programs/Image_processor/src/proc.cpp \
+ /mnt/9C468886468862BE/media/programs/Image_processor/src/proc.cpp \
  /usr/include/stdc-predef.h \
- /home/alfasamec3d/media/programs/Image_processor/include/proc.hpp \
+ /mnt/9C468886468862BE/media/programs/Image_processor/include/proc.hpp \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \

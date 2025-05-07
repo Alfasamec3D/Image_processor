@@ -66,8 +66,8 @@ include _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestam
 # Include the progress variables for this target.
 include _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps.dir/progress.make
 
-_deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
+_deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps: lib/libgmock.a
 
 gmock_main_autogen_timestamp_deps: _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen_timestamp_deps

@@ -66,8 +66,8 @@ include CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/compiler_depe
 # Include the progress variables for this target.
 include CMakeFiles/testgrayscalesection_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/testgrayscalesection_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 CMakeFiles/testgrayscalesection_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
+CMakeFiles/testgrayscalesection_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 CMakeFiles/testgrayscalesection_autogen_timestamp_deps: libproc.a
 CMakeFiles/testgrayscalesection_autogen_timestamp_deps: lib/libgtest_main.a
 

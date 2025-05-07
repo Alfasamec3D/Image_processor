@@ -6,7 +6,7 @@ cmake_minimum_required(VERSION 3.5)
 # Make file names absolute:
 #
 get_filename_component(filename "/mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-subbuild/googletest-populate-prefix/src/main.zip" ABSOLUTE)
-get_filename_component(directory "/mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-src" ABSOLUTE)
+get_filename_component(directory "/home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

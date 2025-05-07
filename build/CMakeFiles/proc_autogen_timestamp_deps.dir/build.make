@@ -66,7 +66,7 @@ include CMakeFiles/proc_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/proc_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
+CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
 CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.6.0
 CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0
 CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.6.0
@@ -122,7 +122,7 @@ CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_optf
 CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.6.0
 CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.6.0
 CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.6.0
-CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
+CMakeFiles/proc_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 
 proc_autogen_timestamp_deps: CMakeFiles/proc_autogen_timestamp_deps
 proc_autogen_timestamp_deps: CMakeFiles/proc_autogen_timestamp_deps.dir/build.make

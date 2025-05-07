@@ -66,8 +66,8 @@ include CMakeFiles/testblur_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/testblur_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/testblur_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 CMakeFiles/testblur_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
+CMakeFiles/testblur_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 CMakeFiles/testblur_autogen_timestamp_deps: libproc.a
 CMakeFiles/testblur_autogen_timestamp_deps: lib/libgtest_main.a
 

@@ -15,6 +15,7 @@ void grayscale_section(const cv::Mat& input, cv::Mat& output, const int& start,
   }
 }
 
+//literally graysacaling an image
 void grayscale(const cv::Mat& input, cv::Mat& output) {
   int numthreads = std::thread::hardware_concurrency();
   std::vector<std::thread> threads;
@@ -54,6 +55,7 @@ void imageblur(const cv::Mat& input, cv::Mat& output, int depth) {
   for (auto& th : threads) th.join();
 }
 
+//Changing brightness and contrast of section of image
 void brightness_contrast_section(const cv::Mat& input, cv::Mat& output,
                                  const int start, const int end, const int a,
                                  const int b) {
@@ -69,6 +71,7 @@ void brightness_contrast_section(const cv::Mat& input, cv::Mat& output,
   }
 }
 
+//Changing brightness and contrast of whole image
 void brightness_contrast(const cv::Mat& input, cv::Mat& output, const int a,
                          const int b) {
   const int numthreads = std::thread::hardware_concurrency();
@@ -86,6 +89,7 @@ void brightness_contrast(const cv::Mat& input, cv::Mat& output, const int a,
   for (auto& th : threads) th.join();
 }
 
+//Simply speaking applying all of the filters
 void updateImage(const cv::Mat& input, cv::Mat& output, const int a,
                  const int b, bool graystate, const int depth, const int rotatestate,
                  const int flipstate) {

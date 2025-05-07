@@ -282,7 +282,7 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Directory under which to collect all populated content
-FETCHCONTENT_BASE_DIR:PATH=/mnt/9C468886468862BE/media/programs/Image_processor/build/_deps
+FETCHCONTENT_BASE_DIR:PATH=/home/alfasamec3d/media/programs/Image_processor/build/_deps
 
 //Disables all attempts to download or update content and assumes
 // source dirs already exist
@@ -472,7 +472,7 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/mnt/9C468886468862BE/media/programs/Image_processor
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/alfasamec3d/media/programs/Image_processor
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR

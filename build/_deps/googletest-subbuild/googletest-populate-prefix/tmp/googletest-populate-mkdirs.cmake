@@ -4,8 +4,8 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-src"
-  "/mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-build"
+  "/home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src"
+  "/home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-build"
   "/mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-subbuild/googletest-populate-prefix"
   "/mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
   "/mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"

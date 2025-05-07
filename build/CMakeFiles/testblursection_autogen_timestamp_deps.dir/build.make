@@ -66,8 +66,8 @@ include CMakeFiles/testblursection_autogen_timestamp_deps.dir/compiler_depend.ma
 # Include the progress variables for this target.
 include CMakeFiles/testblursection_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/testblursection_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 CMakeFiles/testblursection_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
+CMakeFiles/testblursection_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 CMakeFiles/testblursection_autogen_timestamp_deps: libproc.a
 CMakeFiles/testblursection_autogen_timestamp_deps: lib/libgtest_main.a
 

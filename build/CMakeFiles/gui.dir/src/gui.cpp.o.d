@@ -1,7 +1,7 @@
 CMakeFiles/gui.dir/src/gui.cpp.o: \
- /mnt/9C468886468862BE/media/programs/Image_processor/src/gui.cpp \
+ /home/alfasamec3d/media/programs/Image_processor/src/gui.cpp \
  /usr/include/stdc-predef.h \
- /mnt/9C468886468862BE/media/programs/Image_processor/include/gui.hpp \
+ /home/alfasamec3d/media/programs/Image_processor/include/gui.hpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -304,7 +304,7 @@ CMakeFiles/gui.dir/src/gui.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSlider \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
- /mnt/9C468886468862BE/media/programs/Image_processor/include/proc.hpp \
+ /home/alfasamec3d/media/programs/Image_processor/include/proc.hpp \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \

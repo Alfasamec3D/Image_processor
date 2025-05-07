@@ -17,7 +17,7 @@ TEST(ImageProcessingTest, GrayscaleSectionConversion) {
   ASSERT_FALSE(input.empty())<<"Failed to load input image.";
   ASSERT_FALSE(expected.empty()) << "Failed to load expected grayscale image.";
 
-  grayscale_section(input, start, end);
+  grayscale_section(input, input, start, end);
 
   cv::Mat diff;
   cv::absdiff  (input, expected, diff);

@@ -1,5 +1,5 @@
 CMakeFiles/image_proc.dir/image_proc.cpp.o: \
- /mnt/9C468886468862BE/media/programs/Image_processor/image_proc.cpp \
+ /home/alfasamec3d/media/programs/Image_processor/image_proc.cpp \
  /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
@@ -268,7 +268,7 @@ CMakeFiles/image_proc.dir/image_proc.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qhash.h \
  /usr/include/c++/13/variant \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h \
- /mnt/9C468886468862BE/media/programs/Image_processor/include/gui.hpp \
+ /home/alfasamec3d/media/programs/Image_processor/include/gui.hpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
@@ -315,7 +315,7 @@ CMakeFiles/image_proc.dir/image_proc.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSlider \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
- /mnt/9C468886468862BE/media/programs/Image_processor/include/proc.hpp \
+ /home/alfasamec3d/media/programs/Image_processor/include/proc.hpp \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \

@@ -19,6 +19,23 @@
  /usr/share/cmake-3.28/Modules/FindThreads.cmake
  /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake
  /usr/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake
+ /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest/CMakeLists.txt
+ /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest/cmake/Config.cmake.in
+ /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest/cmake/gtest.pc.in
+ /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest/cmake/gtest_main.pc.in
+ /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest/cmake/internal_utils.cmake
+ /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest/src/gtest-all.cc
+ /usr/bin/cmake
+ /usr/share/cmake-3.28/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+ /usr/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake
+ /usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake
+ /usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake
+ /usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake
+ /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake
+ /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake
+ /usr/share/cmake-3.28/Modules/FindThreads.cmake
+ /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake
+ /usr/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake
 
 /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-build/googletest/gtest_autogen/timestamp
  /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-src/googletest/CMakeLists.txt

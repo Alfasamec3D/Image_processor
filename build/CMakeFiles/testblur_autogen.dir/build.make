@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/Image_processor
+CMAKE_SOURCE_DIR = /home/alfasamec3d/media/programs/Image_processor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
+CMAKE_BINARY_DIR = /home/alfasamec3d/media/programs/Image_processor/build
 
 # Utility rule file for testblur_autogen.
 
@@ -71,9 +71,9 @@ CMakeFiles/testblur_autogen: testblur_autogen/timestamp
 testblur_autogen/timestamp: /usr/lib/qt5/bin/moc
 testblur_autogen/timestamp: /usr/lib/qt5/bin/uic
 testblur_autogen/timestamp: CMakeFiles/testblur_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target testblur"
-	/usr/bin/cmake -E cmake_autogen /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/testblur_autogen.dir/AutogenInfo.json Release
-	/usr/bin/cmake -E touch /mnt/9C468886468862BE/media/programs/Image_processor/build/testblur_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target testblur"
+	/usr/bin/cmake -E cmake_autogen /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/testblur_autogen.dir/AutogenInfo.json Release
+	/usr/bin/cmake -E touch /home/alfasamec3d/media/programs/Image_processor/build/testblur_autogen/timestamp
 
 testblur_autogen: CMakeFiles/testblur_autogen
 testblur_autogen: testblur_autogen/timestamp
@@ -89,6 +89,6 @@ CMakeFiles/testblur_autogen.dir/clean:
 .PHONY : CMakeFiles/testblur_autogen.dir/clean
 
 CMakeFiles/testblur_autogen.dir/depend:
-	cd /mnt/9C468886468862BE/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/testblur_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/alfasamec3d/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/testblur_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/testblur_autogen.dir/depend
 

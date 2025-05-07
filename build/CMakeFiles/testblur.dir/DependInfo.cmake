@@ -9,8 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "testblur_autogen/timestamp" "custom" "testblur_autogen/deps"
-  "/mnt/9C468886468862BE/media/programs/Image_processor/build/testblur_autogen/mocs_compilation.cpp" "CMakeFiles/testblur.dir/testblur_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/testblur.dir/testblur_autogen/mocs_compilation.cpp.o.d"
-  "/mnt/9C468886468862BE/media/programs/Image_processor/tests/testBlur.cpp" "CMakeFiles/testblur.dir/tests/testBlur.cpp.o" "gcc" "CMakeFiles/testblur.dir/tests/testBlur.cpp.o.d"
+  "/home/alfasamec3d/media/programs/Image_processor/build/testblur_autogen/mocs_compilation.cpp" "CMakeFiles/testblur.dir/testblur_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/testblur.dir/testblur_autogen/mocs_compilation.cpp.o.d"
+  "/home/alfasamec3d/media/programs/Image_processor/tests/testBlur.cpp" "CMakeFiles/testblur.dir/tests/testBlur.cpp.o" "gcc" "CMakeFiles/testblur.dir/tests/testBlur.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,10 +1,10 @@
-Start testing: May 04 14:32 MSK
+Start testing: May 07 05:52 MSK
 ----------------------------------------------------------
 1/4 Testing: ImageProcessingTest.GrayscaleConversion
 1/4 Test: ImageProcessingTest.GrayscaleConversion
 Command: "/home/alfasamec3d/media/programs/Image_processor/build/testgrayscale" "--gtest_filter=ImageProcessingTest.GrayscaleConversion" "--gtest_also_run_disabled_tests"
 Directory: /home/alfasamec3d/media/programs/Image_processor/build
-"ImageProcessingTest.GrayscaleConversion" start time: May 04 14:32 MSK
+"ImageProcessingTest.GrayscaleConversion" start time: May 07 05:52 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -13,17 +13,17 @@ Note: Google Test filter = ImageProcessingTest.GrayscaleConversion
 [----------] Global test environment set-up.
 [----------] 1 test from ImageProcessingTest
 [ RUN      ] ImageProcessingTest.GrayscaleConversion
-[       OK ] ImageProcessingTest.GrayscaleConversion (121 ms)
-[----------] 1 test from ImageProcessingTest (121 ms total)
+[       OK ] ImageProcessingTest.GrayscaleConversion (111 ms)
+[----------] 1 test from ImageProcessingTest (111 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (121 ms total)
+[==========] 1 test from 1 test suite ran. (111 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.20 sec
+Test time =   0.18 sec
 ----------------------------------------------------------
 Test Passed.
-"ImageProcessingTest.GrayscaleConversion" end time: May 04 14:32 MSK
+"ImageProcessingTest.GrayscaleConversion" end time: May 07 05:52 MSK
 "ImageProcessingTest.GrayscaleConversion" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -31,7 +31,7 @@ Test Passed.
 2/4 Test: ImageProcessingTest.GrayscaleSectionConversion
 Command: "/home/alfasamec3d/media/programs/Image_processor/build/testgrayscalesection" "--gtest_filter=ImageProcessingTest.GrayscaleSectionConversion" "--gtest_also_run_disabled_tests"
 Directory: /home/alfasamec3d/media/programs/Image_processor/build
-"ImageProcessingTest.GrayscaleSectionConversion" start time: May 04 14:32 MSK
+"ImageProcessingTest.GrayscaleSectionConversion" start time: May 07 05:52 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -40,17 +40,17 @@ Note: Google Test filter = ImageProcessingTest.GrayscaleSectionConversion
 [----------] Global test environment set-up.
 [----------] 1 test from ImageProcessingTest
 [ RUN      ] ImageProcessingTest.GrayscaleSectionConversion
-[       OK ] ImageProcessingTest.GrayscaleSectionConversion (105 ms)
-[----------] 1 test from ImageProcessingTest (105 ms total)
+[       OK ] ImageProcessingTest.GrayscaleSectionConversion (123 ms)
+[----------] 1 test from ImageProcessingTest (123 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (105 ms total)
+[==========] 1 test from 1 test suite ran. (124 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.18 sec
+Test time =   0.20 sec
 ----------------------------------------------------------
 Test Passed.
-"ImageProcessingTest.GrayscaleSectionConversion" end time: May 04 14:32 MSK
+"ImageProcessingTest.GrayscaleSectionConversion" end time: May 07 05:52 MSK
 "ImageProcessingTest.GrayscaleSectionConversion" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -58,7 +58,7 @@ Test Passed.
 3/4 Test: ImageProcessingTest.BlurSectionConversion
 Command: "/home/alfasamec3d/media/programs/Image_processor/build/testblursection" "--gtest_filter=ImageProcessingTest.BlurSectionConversion" "--gtest_also_run_disabled_tests"
 Directory: /home/alfasamec3d/media/programs/Image_processor/build
-"ImageProcessingTest.BlurSectionConversion" start time: May 04 14:32 MSK
+"ImageProcessingTest.BlurSectionConversion" start time: May 07 05:52 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -67,17 +67,17 @@ Note: Google Test filter = ImageProcessingTest.BlurSectionConversion
 [----------] Global test environment set-up.
 [----------] 1 test from ImageProcessingTest
 [ RUN      ] ImageProcessingTest.BlurSectionConversion
-[       OK ] ImageProcessingTest.BlurSectionConversion (64 ms)
-[----------] 1 test from ImageProcessingTest (64 ms total)
+[       OK ] ImageProcessingTest.BlurSectionConversion (72 ms)
+[----------] 1 test from ImageProcessingTest (72 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (64 ms total)
+[==========] 1 test from 1 test suite ran. (72 ms total)
 [  PASSED  ] 1 test.
 <end of output>
 Test time =   0.13 sec
 ----------------------------------------------------------
 Test Passed.
-"ImageProcessingTest.BlurSectionConversion" end time: May 04 14:32 MSK
+"ImageProcessingTest.BlurSectionConversion" end time: May 07 05:52 MSK
 "ImageProcessingTest.BlurSectionConversion" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -85,7 +85,7 @@ Test Passed.
 4/4 Test: ImageProcessingTest.BlurConversion
 Command: "/home/alfasamec3d/media/programs/Image_processor/build/testblur" "--gtest_filter=ImageProcessingTest.BlurConversion" "--gtest_also_run_disabled_tests"
 Directory: /home/alfasamec3d/media/programs/Image_processor/build
-"ImageProcessingTest.BlurConversion" start time: May 04 14:32 MSK
+"ImageProcessingTest.BlurConversion" start time: May 07 05:52 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -94,18 +94,18 @@ Note: Google Test filter = ImageProcessingTest.BlurConversion
 [----------] Global test environment set-up.
 [----------] 1 test from ImageProcessingTest
 [ RUN      ] ImageProcessingTest.BlurConversion
-[       OK ] ImageProcessingTest.BlurConversion (109 ms)
-[----------] 1 test from ImageProcessingTest (109 ms total)
+[       OK ] ImageProcessingTest.BlurConversion (112 ms)
+[----------] 1 test from ImageProcessingTest (112 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (109 ms total)
+[==========] 1 test from 1 test suite ran. (113 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.18 sec
+Test time =   0.19 sec
 ----------------------------------------------------------
 Test Passed.
-"ImageProcessingTest.BlurConversion" end time: May 04 14:32 MSK
+"ImageProcessingTest.BlurConversion" end time: May 07 05:52 MSK
 "ImageProcessingTest.BlurConversion" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 04 14:32 MSK
+End testing: May 07 05:52 MSK

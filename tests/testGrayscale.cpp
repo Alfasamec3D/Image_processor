@@ -7,15 +7,16 @@ TEST(ImageProcessingTest, GrayscaleConversion) {
   cv::String image_path1{"../tests/temple.jpg"};
   cv::String image_path2{"../tests/grayscaleTest.png"};
   cv::Mat input = cv::imread(image_path1);
+  cv::Mat output(input.size(),input.type() );
   cv::Mat expected = cv::imread(image_path2);
 
   ASSERT_FALSE(input.empty())<<"Failed to load input image.";
   ASSERT_FALSE(expected.empty()) << "Failed to load expected grayscale image.";
 
-  grayscale(input);
+  grayscale(input, output);
 
   cv::Mat diff;
-  cv::absdiff  (input, expected, diff);
+  cv::absdiff  (output, expected, diff);
   int numDiffPixels = cv :: countNonZero(diff.reshape(1));
 
   EXPECT_EQ(numDiffPixels, 0)

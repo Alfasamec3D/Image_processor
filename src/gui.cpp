@@ -87,10 +87,11 @@ MainAppWindow::MainAppWindow() {
           [this]() { rotateImage(cv::ROTATE_180); });
 
   connect(flip_verticalAction, &QAction::triggered, this,
-          [this]() { flipImage(1); });
-  connect(flip_horizontalAction, &QAction::triggered, this,
           [this]() { flipImage(0); });
+  connect(flip_horizontalAction, &QAction::triggered, this,
+          [this]() { flipImage(1); });
 }
+
 void MainAppWindow::loadImage() {
   QString fileName = QFileDialog::getOpenFileName(
       this, "Open Image", "", "Image (*.png *.jpg *.jpeg *.bmp)");
@@ -126,7 +127,9 @@ void MainAppWindow::applyGrayscale() {
 
   // Apply grayscale
 
-  grayscale(currentProcessedImage);
+  graystate = !graystate;
+  updateImage(baseImage, currentProcessedImage, a, b, graystate, depth,
+              rotatestate, flipstate);
 
   // Ensure deep copy
   imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
@@ -142,8 +145,19 @@ void MainAppWindow::resizeEvent(QResizeEvent*) {
 }
 
 void MainAppWindow::rotateImage(int rotateCode) {
-  cv::Mat input = currentProcessedImage.clone();
-  rotate(input, currentProcessedImage, rotateCode);
+  switch (rotateCode) {
+    case cv::ROTATE_90_CLOCKWISE:
+      rotatestate = (rotatestate + 1) % 4;
+      break;
+    case cv::ROTATE_180:
+      rotatestate = (rotatestate + 2) % 4;
+      break;
+    case cv::ROTATE_90_COUNTERCLOCKWISE:
+      rotatestate = (rotatestate + 3) % 4;  // equivalent to -1
+      break;
+  }
+  updateImage(std::ref(baseImage), std::ref(currentProcessedImage), a, b, graystate, depth,
+              rotatestate, flipstate);
   imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
                             .scaled(imageLabel->size(), Qt::KeepAspectRatio,
                                     Qt::SmoothTransformation));
@@ -151,7 +165,10 @@ void MainAppWindow::rotateImage(int rotateCode) {
 
 void MainAppWindow::flipImage(int flipCode) {
   cv::Mat input = currentProcessedImage.clone();
-  flip(input, currentProcessedImage, flipCode);
+  flipstate = !flipstate;
+  rotatestate = (rotatestate + (((flipCode + 1) % 2) * 2)) % 4;
+  updateImage(baseImage, currentProcessedImage, a, b, graystate, depth,
+              rotatestate, flipstate);
   imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
                             .scaled(imageLabel->size(), Qt::KeepAspectRatio,
                                     Qt::SmoothTransformation));
@@ -164,18 +181,19 @@ void MainAppWindow::showBrightContrastSlider() {
     QLabel* labelBr = new QLabel("Brightness:", brightcontrastControlWidget);
     QLabel* labelCr = new QLabel("Contrast:", brightcontrastControlWidget);
     brightSlider = new QSlider(Qt::Horizontal, brightcontrastControlWidget);
-    contrastSlider=new QSlider(Qt::Horizontal, brightcontrastControlWidget);
+    contrastSlider = new QSlider(Qt::Horizontal, brightcontrastControlWidget);
     QLineEdit* brightLineEdit = new QLineEdit("5", brightcontrastControlWidget);
-    QLineEdit* contrastLineEdit = new QLineEdit("5", brightcontrastControlWidget);
+    QLineEdit* contrastLineEdit =
+        new QLineEdit("5", brightcontrastControlWidget);
 
     brightLineEdit->setFixedWidth(40);
-    brightLineEdit->setValidator(new QIntValidator(-49, 49, brightLineEdit));
+    brightLineEdit->setValidator(new QIntValidator(-64, 64, brightLineEdit));
     contrastLineEdit->setFixedWidth(40);
-    contrastLineEdit->setValidator(new QIntValidator(1, 49, brightLineEdit));
+    contrastLineEdit->setValidator(new QIntValidator(1, 32, brightLineEdit));
 
-    brightSlider->setRange(-49, 49);
+    brightSlider->setRange(-64, 64);
     brightSlider->setValue(5);
-    contrastSlider->setRange(1, 49);
+    contrastSlider->setRange(1, 32);
     contrastSlider->setValue(5);
 
     QHBoxLayout* BrsliderLayout = new QHBoxLayout();
@@ -191,62 +209,61 @@ void MainAppWindow::showBrightContrastSlider() {
     layout->addLayout(CrsliderLayout);
 
     connect(brightSlider, &QSlider::valueChanged, this,
-            [this, brightLineEdit](int value) {
-              brightLineEdit->setText(QString::number(value));
+            [this, brightLineEdit](int bvalue) {
+              brightLineEdit->setText(QString::number(bvalue));
               if (baseImage.empty()) {
                 qDebug() << "Base image is empty! Cannot apply brightness.";
                 return;
               }
 
-              cv::Mat output(baseImage.size(), baseImage.type());
-              brightness_contrast(baseImage, output, 1, value);
-              currentProcessedImage = output;
+              b = bvalue;
+              updateImage(baseImage, currentProcessedImage, a, b, graystate,
+                          depth, rotatestate, flipstate);
               imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
                                         .scaled(imageLabel->size(),
                                                 Qt::KeepAspectRatio,
                                                 Qt::SmoothTransformation));
             });
 
-            connect(contrastSlider, &QSlider::valueChanged, this,
-              [this, contrastLineEdit](int value) {
-                contrastLineEdit->setText(QString::number(value));
-                if (baseImage.empty()) {
-                  qDebug() << "Base image is empty! Cannot apply contrast.";
-                  return;
-                }
-  
-                cv::Mat output(baseImage.size(), baseImage.type());
-                brightness_contrast(baseImage, output, value, 0);
-                currentProcessedImage = output;
-                imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
-                                          .scaled(imageLabel->size(),
-                                                  Qt::KeepAspectRatio,
-                                                  Qt::SmoothTransformation));
-              });
+    connect(contrastSlider, &QSlider::valueChanged, this,
+            [this, contrastLineEdit](int avalue) {
+              contrastLineEdit->setText(QString::number(avalue));
+              if (baseImage.empty()) {
+                qDebug() << "Base image is empty! Cannot apply contrast.";
+                return;
+              }
+              a = avalue;
+              updateImage(baseImage, currentProcessedImage, a, b, graystate,
+                depth, rotatestate, flipstate);
+              imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
+                                        .scaled(imageLabel->size(),
+                                                Qt::KeepAspectRatio,
+                                                Qt::SmoothTransformation));
+            });
 
     connect(brightLineEdit, &QLineEdit::editingFinished, this,
             [this, brightLineEdit]() {
               bool ok;
-              int value = brightLineEdit->text().toInt(&ok);
+              int bvalue = brightLineEdit->text().toInt(&ok);
               if (!ok) return;
 
-              value = std::clamp(value, -49, 49);
-              brightSlider->setValue(value);
+              bvalue = std::clamp(bvalue, -64, 64);
+              brightSlider->setValue(bvalue);
             });
-            connect(contrastLineEdit, &QLineEdit::editingFinished, this,
-              [this, contrastLineEdit]() {
-                bool ok;
-                int value = contrastLineEdit->text().toInt(&ok);
-                if (!ok) return;
-  
-                value = std::clamp(value, -49, 49);
-                contrastSlider->setValue(value);
-              });
+    connect(contrastLineEdit, &QLineEdit::editingFinished, this,
+            [this, contrastLineEdit]() {
+              bool ok;
+              int avalue = contrastLineEdit->text().toInt(&ok);
+              if (!ok) return;
 
-            connect(brightcontrastControlWidget, &QWidget::destroyed, this, [this]() {
-              brightcontrastControlWidget = nullptr;
-              brightSlider = nullptr;
+              avalue = std::clamp(avalue, 1, 32);
+              contrastSlider->setValue(avalue);
             });
+
+    connect(brightcontrastControlWidget, &QWidget::destroyed, this, [this]() {
+      brightcontrastControlWidget = nullptr;
+      brightSlider = nullptr;
+    });
   }
   brightcontrastControlWidget->setGeometry(10, 40, 250, 80);
   brightcontrastControlWidget->show();
@@ -261,10 +278,10 @@ void MainAppWindow::showBlurSlider() {
     QLineEdit* blurLineEdit = new QLineEdit("5", blurControlWidget);
 
     blurLineEdit->setFixedWidth(40);
-    blurLineEdit->setValidator(new QIntValidator(0, 49, blurLineEdit));
+    blurLineEdit->setValidator(new QIntValidator(0, 64, blurLineEdit));
 
-    blurSlider->setRange(0, 49);
-    blurSlider->setValue(5);
+    blurSlider->setRange(0, 64);
+    blurSlider->setValue(depth);
 
     QHBoxLayout* sliderLayout = new QHBoxLayout();
     sliderLayout->addWidget(blurSlider);
@@ -280,10 +297,9 @@ void MainAppWindow::showBlurSlider() {
                 qDebug() << "Base image is empty! Cannot apply blur.";
                 return;
               }
-
-              cv::Mat output(baseImage.size(), baseImage.type());
-              imageblur(baseImage, output, value * 2 + 1);
-              currentProcessedImage = output;
+              depth = value;
+              updateImage(baseImage, currentProcessedImage, a, b, graystate,
+                depth, rotatestate, flipstate);
               imageLabel->setPixmap(cvMatToQPixmap(currentProcessedImage)
                                         .scaled(imageLabel->size(),
                                                 Qt::KeepAspectRatio,
@@ -296,7 +312,7 @@ void MainAppWindow::showBlurSlider() {
               int value = blurLineEdit->text().toInt(&ok);
               if (!ok) return;
 
-              value = std::clamp(value, 0, 49);
+              value = std::clamp(value, 0, 64);
               blurSlider->setValue(value);
             });
     connect(blurControlWidget, &QWidget::destroyed, this, [this]() {

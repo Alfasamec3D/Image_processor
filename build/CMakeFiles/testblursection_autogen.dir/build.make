@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/Image_processor
+CMAKE_SOURCE_DIR = /home/alfasamec3d/media/programs/Image_processor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
+CMAKE_BINARY_DIR = /home/alfasamec3d/media/programs/Image_processor/build
 
 # Utility rule file for testblursection_autogen.
 
@@ -71,9 +71,9 @@ CMakeFiles/testblursection_autogen: testblursection_autogen/timestamp
 testblursection_autogen/timestamp: /usr/lib/qt5/bin/moc
 testblursection_autogen/timestamp: /usr/lib/qt5/bin/uic
 testblursection_autogen/timestamp: CMakeFiles/testblursection_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target testblursection"
-	/usr/bin/cmake -E cmake_autogen /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/testblursection_autogen.dir/AutogenInfo.json Release
-	/usr/bin/cmake -E touch /mnt/9C468886468862BE/media/programs/Image_processor/build/testblursection_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target testblursection"
+	/usr/bin/cmake -E cmake_autogen /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/testblursection_autogen.dir/AutogenInfo.json Release
+	/usr/bin/cmake -E touch /home/alfasamec3d/media/programs/Image_processor/build/testblursection_autogen/timestamp
 
 testblursection_autogen: CMakeFiles/testblursection_autogen
 testblursection_autogen: testblursection_autogen/timestamp
@@ -89,6 +89,6 @@ CMakeFiles/testblursection_autogen.dir/clean:
 .PHONY : CMakeFiles/testblursection_autogen.dir/clean
 
 CMakeFiles/testblursection_autogen.dir/depend:
-	cd /mnt/9C468886468862BE/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build/CMakeFiles/testblursection_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/alfasamec3d/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build/CMakeFiles/testblursection_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/testblursection_autogen.dir/depend
 

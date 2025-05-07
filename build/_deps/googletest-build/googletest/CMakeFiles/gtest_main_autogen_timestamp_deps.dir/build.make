@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/9C468886468862BE/media/programs/Image_processor
+CMAKE_SOURCE_DIR = /home/alfasamec3d/media/programs/Image_processor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/9C468886468862BE/media/programs/Image_processor/build
+CMAKE_BINARY_DIR = /home/alfasamec3d/media/programs/Image_processor/build
 
 # Utility rule file for gtest_main_autogen_timestamp_deps.
 
@@ -79,10 +79,10 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.d
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/build
 
 _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/clean:
-	cd /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-build/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main_autogen_timestamp_deps.dir/cmake_clean.cmake
+	cd /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-build/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main_autogen_timestamp_deps.dir/cmake_clean.cmake
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/clean
 
 _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/depend:
-	cd /mnt/9C468886468862BE/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/9C468886468862BE/media/programs/Image_processor /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-src/googletest /mnt/9C468886468862BE/media/programs/Image_processor/build /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-build/googletest /mnt/9C468886468862BE/media/programs/Image_processor/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/alfasamec3d/media/programs/Image_processor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alfasamec3d/media/programs/Image_processor /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-src/googletest /home/alfasamec3d/media/programs/Image_processor/build /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-build/googletest /home/alfasamec3d/media/programs/Image_processor/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen_timestamp_deps.dir/depend
 

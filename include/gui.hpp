@@ -37,6 +37,12 @@ class MainAppWindow : public QMainWindow {
   cv::Mat baseImage;
   QWidget* blurControlWidget = nullptr;
   QWidget* brightcontrastControlWidget = nullptr;
+  bool graystate = 0;
+  int rotatestate = 0;
+  bool flipstate = 0;
+  int a=1;
+  int b=0;
+  int depth=0;
 };
 
 #endif

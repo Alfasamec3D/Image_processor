@@ -2,25 +2,28 @@
 
 #include <thread>
 
-void grayscale_section(cv::Mat& image, const int& start, const int& end) {
+void grayscale_section(const cv::Mat& input, cv::Mat& output, const int& start,
+                       const int& end) {
   for (int i = start; i < end; ++i) {
-    for (int j = 0; j < image.cols; ++j) {
-      cv::Vec3b& pixel = image.at<cv::Vec3b>(i, j);
-      uchar gray = static_cast<uchar>(0.11 * pixel[0] + 0.59 * pixel[1] +
-                                      0.3 * pixel[2]);
+    for (int j = 0; j < input.cols; ++j) {
+      cv::Vec3b& pixel = output.at<cv::Vec3b>(i, j);
+      const cv::Vec3b& pixel_in = input.at<cv::Vec3b>(i, j);
+      uchar gray = static_cast<uchar>(0.11 * pixel_in[0] + 0.59 * pixel_in[1] +
+                                      0.3 * pixel_in[2]);
       pixel = cv::Vec3b(gray, gray, gray);
     }
   }
 }
 
-void grayscale(cv::Mat& image) {
+void grayscale(const cv::Mat& input, cv::Mat& output) {
   int numthreads = std::thread::hardware_concurrency();
   std::vector<std::thread> threads;
   for (int i = 0; i < numthreads; ++i) {
-    int start = image.rows / numthreads * i;
-    int end =
-        (i == numthreads - 1) ? image.rows : image.rows / numthreads * (i + 1);
-    threads.emplace_back(grayscale_section, std::ref(image), start, end);
+    int start = output.rows / numthreads * i;
+    int end = (i == numthreads - 1) ? output.rows
+                                    : output.rows / numthreads * (i + 1);
+    threads.emplace_back(grayscale_section, std::ref(input), std::ref(output),
+                         start, end);
   }
   for (auto& th : threads) th.join();
 }
@@ -81,4 +84,42 @@ void brightness_contrast(const cv::Mat& input, cv::Mat& output, const int a,
                          std::ref(output), start, end, a, b);
   }
   for (auto& th : threads) th.join();
+}
+
+void updateImage(const cv::Mat& input, cv::Mat& output, const int a,
+                 const int b, bool graystate, const int depth, const int rotatestate,
+                 const int flipstate) {
+  output = input.clone();
+  brightness_contrast(input, output, a, b);
+  cv::Mat result = output.clone();
+
+  if (graystate) {
+    grayscale(result, output);
+    result = output.clone();
+  }
+
+  imageblur(result, output, depth * 2 + 1);
+  result = output.clone();
+
+  if (flipstate) {
+    flip(result, output, 1);
+    result = output.clone();
+  }
+
+  output =cv::Mat(result.size(),result.type() );
+  switch (rotatestate) {
+    case 0:
+      output = result.clone();
+      break;
+    case 1:
+      rotate(result, output, cv::ROTATE_90_CLOCKWISE);
+      break;
+    case 2:
+      rotate(result, output, cv::ROTATE_180);
+      break;
+    case 3:
+      rotate(result, output, cv::ROTATE_90_COUNTERCLOCKWISE);
+      break;
+  }
+  return;
 }
